@@ -57,6 +57,16 @@ body{
     margin: 0 auto;
 }
 
+.videos .wider, .links .wider {
+    width: 1144px;
+    margin-left: -12px;
+}
+
+.videos .wider-wrapper {
+    width: 1144px;
+    margin: 0 auto;
+}
+
 .red-line{
     height: 8px;
     background: #F03E2B;
@@ -369,7 +379,66 @@ h2 {
     margin-left: -2px;
 }
 
-.areas{
+#top-menu {
+    float: right;
+    color: #464646;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#top-menu ul li {
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#top-menu .top-menu-item {
+    color: #464646;
+    padding: 28px 0;
+}
+
+#top-menu a:last-child {
+    margin-right: 0;
+}
+
+#top-menu > ul > li:hover .drop-down-menu {
+    display: block;
+}
+
+.drop-down-menu {
+    margin-left: -33px;
+    width: 583px;
+    box-shadow: 0 4px 4px 0 rgba(197, 197, 197, 0.5);
+    background-color: #ffffff;
+    border: solid 1px #d3d3d3;
+    text-transform: none;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.drop-down-menu li {
+    display: inline-block;
+    margin: 26px 32px;
+}
+
+.drop-down-menu h4 {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    color: #284999;
+}
+
+.drop-down-menu a {
+    font-size: 13px;
+    text-align: left;
+    color: #464646;
+    display: block;
+    text-transform: none;
+}
+
+.areas {
     width: 340px;
     background: #E2EBFF;
     float: right;
@@ -485,6 +554,7 @@ h2 {
 
 .latest-video-item {
     padding: 12px;
+    width: 286px;
 }
 
 .videos .latest > div .video-wrapper{
@@ -615,11 +685,14 @@ h2 {
     font-size: 12px;
 }
 
-
+.main-footer .logo {
+    margin-top: 13px;
+}
 .main-footer .logo span{
     font-size: 12px;
     padding: 0 0 0 10px;
     line-height: 16px;
+    margin-top:5px
 }
 .main-footer .logo img{
     width: 46px;
@@ -665,7 +738,7 @@ h2 {
     border-radius: 6px;
     padding: 13px;
     border: none;
-    margin-top: 16px;
+    margin-top: 13px;
     background: #FFFFFF url("../img/str.png") 95% 50%  no-repeat;
 }
 .footer-center{
@@ -792,7 +865,11 @@ p {
         width: 705px;
     }
 
-    .main-menu{
+    .videos .wider, .links .wider {
+        width: 729px;
+    }
+
+    .main-menu, #top-menu {
         display: none;
     }
 
@@ -1020,7 +1097,11 @@ p {
         padding: 0 13px;
     }
 
-    .main-menu{
+    .videos .wider, .links .wider {
+        width: 100%
+    }
+
+    .main-menu, #top-menu {
         display: none;
     }
 
