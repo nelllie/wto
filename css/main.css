@@ -909,109 +909,113 @@ p {
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
 
-    h1{
+    h1 {
         margin: 24px 0 37px;
         font-size: 28px;
     }
 
-    h3{
-    margin-top: 23px
+    h3 {
+        margin-top: 23px
     }
 
     p {
         line-height: 26px;
         margin-top: 8px;
     }
-    .breadcramps{
+
+    .breadcramps {
         padding: 5px 16px 7px;
     }
 
-    .wrapper{
+    .wrapper {
         width: 705px;
     }
 
-    .main-menu{
+    .main-menu {
         display: none;
     }
 
-    .mob-hidden-menu{
+    .mob-hidden-menu {
         display: block;
         margin-top: 15px;
     }
 
-    .intro, .slider-wrapper, .slider, .articles{
+    .intro, .slider-wrapper, .slider, .articles {
         width: 424px;
     }
-    .header-top{
+
+    .header-top {
         display: none;
     }
 
-    .header-bottom{
+    .header-bottom {
         padding: 9px 0 4px;
         height: auto;
     }
 
-    .header-bottom .logo img{
+    .header-bottom .logo img {
         width: 52px;
     }
 
-    .header-bottom .logo span{
+    .header-bottom .logo span {
         font-size: 16px;
-        padding:0 0 0 10px;
+        padding: 0 0 0 10px;
     }
 
-    .areas{
+    .areas {
         width: 280px;
         margin: 0 -30px 0 30px;
     }
 
-    .slider-wrapper, .articles, .videos, .links{
+    .slider-wrapper, .articles, .videos, .links {
         margin-top: 30px
     }
 
-    .mob-hidden{
+    .mob-hidden {
         display: none;
     }
 
-    .articles h2{
+    .articles h2 {
         font-size: 20px;
         width: 48%;
         margin-right: 0;
         text-align: center;
     }
-    .articles .latest > div{
+
+    .articles .latest > div {
         width: 200px;
         margin-right: 24px;
 
     }
 
-    .articles .latest > div:nth-child(2){
+    .articles .latest > div:nth-child(2) {
         margin-right: 0;
     }
 
-    .intro{
+    .intro {
         padding: 44px 20px;
-
 
     }
 
-    .intro h1{
+    .intro h1 {
         font-size: 22px;
         text-align: center;
         vertical-align: top;
     }
 
-    .intro p{
+    .intro p {
         line-height: 26px;
         font-size: 18px;
         text-align: left;
         margin-top: 18px;
     }
-    .articles{
+
+    .articles {
         position: relative;
         padding-bottom: 65px;
     }
-    .archive{
+
+    .archive {
         color: #ffffff;
         background: #284999;
         position: absolute;
@@ -1027,32 +1031,31 @@ p {
         right: auto;
     }
 
-    .videos{
+    .videos {
         padding-bottom: 65px;
     }
 
     /*.videos .latest > div{*/
-        /*width: 218px;*/
-        /*margin-right: 25px;*/
+    /*width: 218px;*/
+    /*margin-right: 25px;*/
     /*}*/
-
-    .videos .latest > div:nth-child(3){
+    .videos .latest > div:nth-child(3) {
         margin-right: 0;
     }
 
-    .areas h2{
+    .areas h2 {
         font-size: 19px;
     }
 
-    .areas span{
+    .areas span {
         font-size: 14px;
     }
 
-    .areas a{
+    .areas a {
         padding: 22px 10px 22px 45px;
     }
 
-    .slider li{
+    .slider li {
         padding: 32px 24px 30px;
     }
 
@@ -1060,57 +1063,57 @@ p {
         width: 219px;
     }
 
-    .video-slider{
+    .video-slider {
         display: none;
     }
 
-    .links{
-        padding:24px 0 45px;
+    .links {
+        padding: 24px 0 45px;
     }
 
     .footer-center {
         display: none;
     }
 
-    .footer-left{
+    .footer-left {
         width: 36%;
         position: static;
         float: left;
     }
 
-    .footer-right{
+    .footer-right {
         width: 37%;
         position: static;
         display: inline-block;
         float: right;
     }
 
-    .main-footer{
+    .main-footer {
         padding: 24px 0;
     }
 
-    .main-footer .logo img{
+    .main-footer .logo img {
         width: 56px;
     }
 
-    .main-footer .logo span{
+    .main-footer .logo span {
         font-size: 16px;
         margin-top: 10px;
     }
 
-    .main-footer span{
+    .main-footer span {
         font-size: 14px;
         font-weight: 100;
         margin-bottom: 20px;
         display: inline-block;
         line-height: 20px;
     }
-    .main-footer input{
+
+    .main-footer input {
         padding: 15px;
     }
 
     /************* Internal PAGE ***********/
-
     .grey-bg {
 
         padding: 30px 25px;
@@ -1125,6 +1128,7 @@ p {
         position: static;
         margin: 0;
     }
+
     .small-table td {
         padding-left: 0;
         padding-right: 15px;
@@ -1134,37 +1138,37 @@ p {
         padding-bottom: 35px;
 
     }
-    .photo{
-    margin-bottom: 40px;
-    }
-}
 
-    .photo a{
+    .photo {
+        margin-bottom: 40px;
+    }
+
+    .photo a {
         display: block;
         width: 31.2%;
         margin-right: 20px;
         margin-top: 20px;
     }
 
-    .photo img{
+    .photo img {
         width: 100%;
         vertical-align: top;
     }
 
-    .photo a:nth-child(4n){
-     margin-right: 20px;
+    .photo a:nth-child(4n) {
+        margin-right: 20px;
     }
 
-    .photo a:nth-child(3n){
+    .photo a:nth-child(3n) {
         margin-right: 0;
     }
 
-    .photo a:nth-child(-n+3){
-    margin-top: 0;
+    .photo a:nth-child(-n+3) {
+        margin-top: 0;
     }
 
-    article{
-       padding-bottom: 35px;
+    .article {
+        padding-bottom: 35px;
     }
 
     .videos-314 .latest > div {
@@ -1172,23 +1176,23 @@ p {
         margin-right: 20px;
     }
 
-    .videos-314 .latest > div:nth-child(3n){
+    .videos-314 .latest > div:nth-child(3n) {
         margin-right: 20px;
     }
 
-    .videos-314 .latest > div:nth-child(2n){
+    .videos-314 .latest > div:nth-child(2n) {
         margin-right: 0;
     }
 
-    .videos-314 .latest >div:nth-child(n+3) {
+    .videos-314 .latest > div:nth-child(n+3) {
         margin-top: 20px;
     }
 
-    .videos-314 .latest > div a{
+    .videos-314 .latest > div a {
         margin-top: 0;
     }
 
-
+}
 
 
     /*********** Internal PAGE END **********/
