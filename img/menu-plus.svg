@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wto-main-mobile-menu" transform="translate(-333.000000, -92.000000)" fill="#FFFFFF">
+            <g id="Group-7" transform="translate(333.000000, 92.000000)">
+                <polygon id="+" points="9.7699115 9.60248447 9.7699115 12 8.2300885 12 8.2300885 9.60248447 6 9.60248447 6 8.29813665 8.2300885 8.29813665 8.2300885 6 9.7699115 6 9.7699115 8.29813665 12 8.29813665 12 9.60248447"></polygon>
+                <path d="M9,0 C4.02528516,0 0,4.02563672 0,9 C0,13.9747148 4.02563672,18 9,18 C13.9747148,18 18,13.9743633 18,9 C18,4.02528516 13.9743633,0 9,0 Z M9,16.59375 C4.80258984,16.59375 1.40625,13.1971289 1.40625,9 C1.40625,4.80258984 4.80287109,1.40625 9,1.40625 C13.1974102,1.40625 16.59375,4.80287109 16.59375,9 C16.59375,13.1974102 13.1971289,16.59375 9,16.59375 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

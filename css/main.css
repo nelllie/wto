@@ -37,6 +37,23 @@ body{
     line-height: 150%;
 }
 
+.page-overlay{
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+}
+
+.close-button{
+    display: block;
+    width: 75px;
+    height: 65px;
+    background: #FFFFFF url("../img/menu-close.svg") center no-repeat;
+    position: absolute;
+    z-index: 2100;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -176,6 +193,57 @@ body{
     position: relative;
 }
 
+.main-menu{
+    float: right;
+    color: #464646;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.main-menu a{
+    font-size: 15px;
+    color: #464646;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 30px;
+}
+.main-menu a:last-child{
+    margin-right: 0;
+}
+
+.main-menu > a:hover .drop-down-menu {
+    display: block;
+}
+
+.drop-down-menu {
+    width: 583px;
+    height: 342px;
+    box-shadow: 0 4px 4px 0 rgba(197, 197, 197, 0.5);
+    background-color: #ffffff;
+    border: solid 1px #d3d3d3;
+    display: block;
+    text-transform: none;
+}
+
+.drop-down-menu li {
+    display: inline-block;
+    margin: 26px 32px;
+}
+
+.drop-down-menu h4 {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    color: #284999;
+}
+
+.drop-down-menu a {
+    font-size: 13px;
+    text-align: left;
+    color: #464646;
+    display: block;
+}
+
 .mob-hidden-menu{
     display: none;
     float: right;
@@ -213,7 +281,9 @@ body{
     margin: 8px 0;
 }
 
-/*************mob-menu-mini**************/
+
+
+/*************   mob-menu-mini start   **************/
 .mob-menu-mini {
     width: 301px;
     background-color: #254498;
@@ -222,93 +292,146 @@ body{
     color: #FFFFFF;
 }
 
+
 .mob-menu-mini input {
     border: none;
-    background: #254498 url("../img/lupa.png") right 0% no-repeat;
+    background: #254498 url("../img/search-icon.svg")  right 0 no-repeat;
     background-size: 26px;
-    border-bottom: solid 1px #486DA7;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
     padding-bottom: 23px;
-    color: #6D91CB;
-    font-size: 18px;
+    color: #FFFFFF;
     width: 100%;
+    outline: none;
 }
-.mob-menu-mini li  a {
+.mob-menu-mini li  {
     font-size: 22px;
     font-weight: bold;
     text-align: left;
-    color: #ffffff;
-    display: inline-block;
+    display: block;
+}
+
+.mob-menu-mini li a {
+    color: #FFFFFF;
+
+}
+
+.mob-menu-mini h4 {
+    padding-left: 20px;
+    position: relative;
+}
+
+.mob-menu-mini h4::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #FFFFFF;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    top: 12px;
+    left: 0;
 }
 
 .mob-menu-mini h4 a {
     font-size: 20px;
     text-align: left;
     color: #ffffff;
-    padding: 20px 0 12px;
+
 }
 
-.level1 li{
-    list-style: none;
+
+
+.level1  li {
+    margin-top: 19px;
     position: relative;
 
 }
-.level1 > li > a{
-    border-bottom: solid 1px #486DA7;
-    display: block;
-    padding: 20px 0;
+
+.level1 > li > a {
+    margin-bottom: 23px;
+    display: inline-block;
+    position: relative;
+
 }
 
-.level4  {
-    width: 113px;
+.level1 > li > a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 250px;
+    bottom: -23px;
 }
+
+.plus {
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-plus.svg") right no-repeat;
+    background-size: 80%;
+}
+
+.minus {
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-minus.svg") right no-repeat;
+    background-size: 80%;
+}
+
+
+
 
 .level4 li a {
     font-weight: normal;
     font-size: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-right: 24px;
+
 
 }
 
 .level2 li {
     list-style: disc;
     list-style-position: outside;
-    margin-left: 14px;
-    padding-left: 8px;
-    position: relative;
+    color:#ffffff;
+
 }
 
 .level3 li{
     list-style: none;
-    margin-left: -22px;
-    padding-left: 0;
 }
 
 .level3 li a {
     font-size: 20px;
     font-weight: normal;
-    padding: 10px 0;
+    margin-top: 20px;
 }
-
-.inactive-li::after{
-    position: absolute;
-    content: url("../img/plus.svg") ;
+.level4 a{
     display: block;
-    height: 24px;
-    width: 24px;
-    border-radius: 10px;
-    top: 50%;
-    right: 0;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
 }
 
+.level4 li:last-child a {
+    margin-right: 20px;
+    display: inline-block;
+}
+.level4 li:last-child .active {
+    font-weight: bold;
+}
 
+.level2{
+    display: none
+}
+
+.li-active{
+    display: block;
+}
 
 /*************   mob-menu-mini end   **************/
-
-
 
 .intro {
     width: 740px;
