@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.75">
+        <g id="wto-main-mobile" transform="translate(-144.000000, -1815.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3.2">
+            <g id="videos" transform="translate(-237.000000, 1691.000000)">
+                <g id="play-icon" transform="translate(383.000000, 126.000000)">
+                    <path d="M42,84 C18.8040405,84 0,65.1959595 0,42 C0,18.8040405 18.8040405,0 42,0 C65.1959595,0 84,18.8040405 84,42 C84,65.1959595 65.1959595,84 42,84 Z M59.7357059,38.6381637 L36.7798529,25.6012503 C35.3683045,24.7995972 33.6766437,24.7996406 32.2647084,25.6010363 C30.8498417,26.4044145 30,27.8522254 30,29.4630268 L30,55.5368535 C30,57.1476854 30.8497275,58.5953335 32.2645951,59.3987797 C32.9620454,59.7950029 33.7366086,60 34.521934,60 C35.3069256,60 36.0817643,59.7948219 36.7796051,59.3986914 L59.7358401,46.3618569 C61.1504845,45.558194 62,44.1105611 62,42.4998029 C62,40.8891417 61.1503024,39.4414805 59.7357059,38.6381637 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

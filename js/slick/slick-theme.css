@@ -116,7 +116,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .slick-dots
@@ -160,6 +160,7 @@
 
     cursor: pointer;
 
+    background: none;
     color: transparent;
     border: 0;
     outline: none;
@@ -210,5 +211,5 @@
 }
 
 .slick-list {
-    padding: 0 30px;
+    padding: 0 0px;
 }

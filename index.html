@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title></title>
     <link type="text/css" rel="stylesheet" href="css/normalize.css" >
-    <link type="text/css" rel="stylesheet" href="css/main.css">
-
 
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+
+    <link type="text/css" rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.min.css">
 
@@ -34,7 +34,78 @@
                 <a class="logo"><img src="img/logo.png" ><span>Azerbaijan and<br>World Trade Organization</span></a>
 
                 <!-- TOP MENU Start -->
+                <nav id="top-menu">
+                    <ul>
+                        <li>
+                            <a class="top-menu-item" href="#">WTO</a>
+                            <ul class="drop-down-menu">
+                                <li>
+                                    <h4>What is the WTO</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                </li>
+                                <li>
+                                    <h4>Membership</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                </li>
+                                <li>
+                                    <h4>Decision-making</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="top-menu-item" href="#">AZERBAIJAN AND WTO</a>
+                            <ul class="drop-down-menu">
+                                <li>
+                                    <h4>What is the WTO</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
 
+                                    <h4>What is the WTO</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                </li>
+                                <li>
+                                    <h4>Membership</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                </li>
+                                <li>
+                                    <h4>Decision-making</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="top-menu-item" href="#">AREAS DOCUMENTS, DATA AND RESOURCES</a>
+                            <ul class="drop-down-menu">
+                                <li>
+                                    <h4>What is the WTO</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                </li>
+                                <li>
+                                    <h4>Membership</h4>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                    <a>Who is who</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
                 <!-- TOP MENU End -->
 
                 <div class="mob-hidden-menu">
@@ -45,7 +116,7 @@
             </div>
         </div>
     </header>
-    <div class="wrapper clearfix">
+    <div class="wrapper mobile-wide clearfix">
         <div class="intro">
             <h1>AZERBAIJAN ACCESSION TO WTO</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -186,31 +257,31 @@
             <h2>FACTS AND FIGURES</h2>
             <div class="slider">
                 <ul id="facts-slider">
-                    <li>
+                    <li class="fact_slide">
                         <span>1995</span>
                         <p>WTO start
                             year for Azerbaijan
                             negotiation</p>
                     </li>
-                    <li>
+                    <li class="fact_slide">
                         <span>456</span>
                         <p>Pieces of legistlation
                             reformed in complence
                             with WTO</p>
                     </li>
-                    <li>
+                    <li class="fact_slide">
                         <span>87%</span>
                         <p>Relevant statement
                             authorities dealing
                             with trade</p>
                     </li>
-                    <li>
+                    <li class="fact_slide">
                         <span>456</span>
                         <p>Pieces of legistlation
                             reformed in complence
                             with WTO</p>
                     </li>
-                    <li>
+                    <li class="fact_slide">
                         <span>87%</span>
                         <p>Relevant statement
                             authorities dealing
@@ -221,9 +292,9 @@
         </div>
         <div class="articles">
             <div>
-                <h2>LATEST NEWS</h2><h2 class="inactive">UPCOMING EVENTS</h2>
+                <h2 data-tab-switcher="news">LATEST NEWS</h2><h2 class="inactive" data-tab-switcher="events">UPCOMING EVENTS</h2>
             </div>
-            <div class="latest clearfix">
+            <div class="latest clearfix" data-tab="news">
                 <div class="clearfix"><a href="#"> <img src="http://placehold.it/228x160" alt=""><span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
                 </div>
                 <div class="clearfix"><a href="#"> <img src="http://placehold.it/228x160" alt=""><span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
@@ -231,7 +302,7 @@
                 <div class="mob-hidden"><a href="#"> <img src="http://placehold.it/228x160" alt=""><span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
                 </div>
             </div>
-            <div class="latest hidden clearfix">
+            <div class="latest hidden clearfix" data-tab="events">
                 <div><a href="#"> <img src="http://placehold.it/228x160" alt=""><span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
                 </div>
                 <div><a href="#"> <img src="http://placehold.it/228x160" alt=""><span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
@@ -239,19 +310,19 @@
                 <div class="mob-hidden"><a href="#"> <img src="http://placehold.it/228x160" alt=""><span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a>
                 </div>
             </div>
-            <a href="#" class="archive hidden">All events</a>
-            <a href="#" class="archive">All news archive</a>
+            <a href="#" class="archive hidden" data-tab="events">All events</a>
+            <a href="#" class="archive" data-tab="news">All news archive</a>
         </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper mobile-wide">
         <div class="videos">
-            <div>
+            <div class="wrapper">
                 <h2>VIDEOS</h2>
             </div>
-            <div class="latest clearfix main-page-videos">
+            <div class="wider latest clearfix main-page-videos">
                 <div class="latest-video-item">
-                    <a href="https://www.youtube.com/watch?v=6euq7iqZ-ic" data-fancybox>
-                        <div class="video-wrapper"><img src="http://placehold.it/262x184" alt=""></div>
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="video-gallery">
+                        <div class="video-wrapper"><img src="https://img.youtube.com/vi/_sI_Ps7JSEk/mqdefault.jpg" alt=""></div>
                         <span>02 May 2018</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </a>
@@ -266,22 +337,19 @@
             <a href="#" class="archive clearfix">All videos</a>
         </div>
     </div>
-        <div class="links clearfix">
-            <div class="wrapper">
-                <h2>USEFUL LINKS</h2>
-                <div class="slider-bottom">
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                    <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
-                </div>
+    <div class="links clearfix">
+        <div class="wrapper">
+            <h2>USEFUL LINKS</h2>
+            <div class="wider slider-bottom">
+                <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
+                <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
+                <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
+                <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
+                <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
+                <a href="#"><img src="http://placehold.it/261x122" alt=""></a>
             </div>
         </div>
+    </div>
 
     <footer class="main-footer">
 
@@ -289,7 +357,7 @@
             <div class="footer-top clearfix">
                 <div class="footer-left clearfix">
                     <a class="logo"><img src="img/logo.png" ><span>Azerbaijan and<br>World Trade Organization</span></a>
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+
                 </div>
                 <div class="footer-center">
                     <a class="bold" href="#">Sitemap</a>
