@@ -82,10 +82,26 @@ $(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: true
+                    centerMode: true,
+                    dots: false
                 }
             }
         ]
+    });
+
+    // home page: news/events switcher
+    $('[data-tab-switcher]').click(function () {
+        var tab = $(this).data('tab-switcher');
+
+        // turn off all switchers
+        $(this).closest('.articles').find('[data-tab-switcher]').addClass('inactive');
+        // turn on current switcher
+        $(this).removeClass('inactive');
+
+        // turn off all tabs
+        $(this).closest('.articles').find('[data-tab]').hide().end()
+            // turn on current tabs
+            .find('[data-tab="'+tab+'"]').show();
     });
 
 });
