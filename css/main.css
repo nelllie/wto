@@ -917,6 +917,97 @@ p {
 
 /**************   PAGE 1  END  **************/
 
+
+
+
+/************** NEWS-PAGE*************/
+.content h1{
+    font-size: 32px;
+    margin: 28px 0 45px;
+}
+.content .list div {
+    float: left;
+    width: 314px;
+    margin: 30px 25px 0 0;
+    display: inline-block;
+}
+
+.content .list div:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.content .list div:nth-of-type(-n+3) {
+    margin-top: 0;
+}
+
+.content .list img {
+    width: 100%;
+    border-radius: 6px;
+    vertical-align: top;
+}
+
+.content .list span, .videos span {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #464646;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.content .list p{
+    font-size: 18px;
+    text-align: left;
+    color: #294c9b;
+    margin-top: 4px;
+}
+
+.content .list a:hover p{
+    text-decoration: underline;
+}
+
+.content .pagination{
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.content .pagination a, .content .pagination span{
+    background: #f2f2f2;
+    color:#464A4B;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 -2px;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.content .pagination a:hover, .content .pagination span:hover, .content .pagination a:nth-child(2):hover,.content .pagination a:nth-last-child(2):hover{
+    color: #FFFFFF;
+    background: #3860BE;
+}
+
+.content .pagination a:nth-child(2){
+    color:#f2f2f2;
+    background: #f2f2f2 url("../img/nav-left.svg") center no-repeat;
+    border-radius: 3px 0 0 3px;
+}
+
+.content .pagination a:nth-last-child(2){
+    color:#f2f2f2;
+    background: #f2f2f2 url("../img/nav-right.svg") center no-repeat;
+    border-radius: 0 3px 3px 0;
+}
+
+.content .pagination a:first-child, .content .pagination a:last-child{
+    width: 55px;
+    border-radius: 3px;
+}
+
+/************** NEWS-PAGE*************/
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
         font-size: 20px;
@@ -1204,11 +1295,34 @@ p {
     .videos-314 .latest > div a {
         margin-top: 0;
     }
+    /*********** Internal PAGE END **********/
+
+    /************ News Page Start ***********/
+
+    .content .list div{
+        margin-right: 24px;
+        width: 47%;
+    }
+
+    .content .list div:nth-of-type(2n){
+        margin-right: 0;
+    }
+
+    .content .list div:nth-of-type(3){
+        margin-top: 30px;
+        margin-right: 24px;
+    }
+
+
+
+    /************ News Page END ***********/
+
+
 
 }
 
 
-    /*********** Internal PAGE END **********/
+
 
 
 
@@ -1244,6 +1358,12 @@ p {
         width: 100%;
         padding: 0 20px;
     }
+
+    .grey-bg{
+        padding: 20px 0;
+    }
+
+
     .wrapper.mobile-wide {
         padding: 0;
     }
@@ -1538,11 +1658,83 @@ p {
     .footer-center{
         display: none;
     }
-}
 
-@media screen and (max-width: 374px) {
-    .articles .latest > div p {
+
+    .content .list div{
+        width: 100%;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .content .list div::after{
+        content: '';
+        display: block;
+        clear: both;
+
+    }
+
+    .content .list div img{
+        float:left;
+        width: 37%;
+        margin-right: 20px;
+    }
+
+
+
+    .content .list div span{
+        float: left;
+        margin-top: 0;
+        text-align: left;
+        display: block;
         font-size: 14px;
-        line-height: 18px;
+    }
+
+    .content .list div p{
+        float: left;
+        font-size: 16px;
+        width: calc(63% - 20px);
+        line-height: 22px;
+        margin-top: 0;
+        overflow: hidden;
+
+    }
+    .wrapper-white{
+        background: transparent;
+        padding: 0 20px;
+    }
+    .content{
+        width: 100%;
+    }
+
+    .content .pagination{
+        margin: 25px 0 0 0;
+    }
+
+    .content .pagination a, .content .pagination span{
+        background-color: #FFFFFF;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        margin: 0 -1px;
+    }
+
+    .content .pagination a:nth-child(2) {
+        background: #ffffff url("../img/nav-left.svg") center no-repeat;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .content .pagination a:nth-last-child(2) {
+        background: #FFFFFF url("../img/nav-right.svg") center no-repeat;
+    }
+
+    .content .pagination a:first-child,.content .pagination a:last-child,.content .pagination span, .content .hidden{
+        display: none;
     }
 }
+
+/*@media screen and (max-width: 374px) {*/
+    /*.articles .latest > div p {*/
+        /*font-size: 14px;*/
+        /*line-height: 18px;*/
+    /*}*/
+/*}*/
