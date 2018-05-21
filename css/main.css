@@ -984,9 +984,10 @@ p {
     vertical-align: middle;
 }
 
-.content .pagination a:hover, .content .pagination span:hover, .content .pagination a:nth-child(2):hover,.content .pagination a:nth-last-child(2):hover{
+.content .pagination .active-pgn{
     color: #FFFFFF;
-    background: #3860BE;
+    background-image: linear-gradient(-180deg, #3860BE 0%, #294C9C 100%);
+    font-weight: bold;
 }
 
 .content .pagination a:nth-child(2){
