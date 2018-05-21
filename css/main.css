@@ -1040,6 +1040,25 @@ p {
 
 /********** Video-gallery end ***********/
 
+
+
+/************* FAG normal start **********/
+    .content .faq div{
+        background: #E4ECFE;
+        border-radius: 6px;
+    }
+
+    .content .faq span{
+        /* 1. Lorem Ipsum is si: */
+        font-family: HelveticaNeue-Light;
+        font-size: 18px;
+        color: #294C9B;
+        letter-spacing: 0;
+        line-height: 26px;
+    }
+
+/************* FAG normAl end **********/
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
         font-size: 20px;
