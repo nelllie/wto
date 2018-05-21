@@ -1040,6 +1040,41 @@ p {
 
 /********** Video-gallery end ***********/
 
+/************* Photo albums ******/
+
+.content .photo-albums {
+    margin-bottom: 50px;
+}
+
+.content .photo-albums a {
+    margin-right:  24px;
+    margin-top: 24px;
+    width: 314px;
+    display: block;
+    float: left;
+}
+
+.content .photo-albums a img {
+    border-radius: 6px;
+}
+
+.content .photo-albums a:nth-child(-n+3) {
+    margin-top: 0;
+}
+
+.content .photo-albums a:nth-child(3n){
+    margin-right: 0;
+}
+
+.content .photo-albums a img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+
+/************* Photo albums end ******/
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
         font-size: 20px;
@@ -1348,6 +1383,27 @@ p {
 
 
     /************ News Page END ***********/
+
+    /************* Photo albums ******/
+
+    .content .photo-albums a {
+        width: 48%;
+    }
+
+    .content .photo-albums a:nth-child(3n) {
+        margin-right: 24px;
+    }
+
+    .content .photo-albums a:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .content .photo-albums a:nth-child(3) {
+        margin-top: 24px;
+    }
+
+    /************* Photo albums end ******/
+
 
 
 
@@ -1775,6 +1831,28 @@ p {
     }
     
     /************ VIDEO- GALLERY 768 END ************/
+
+    /************* Photo albums ******/
+
+    .content .photo-albums a {
+        margin-right: 15px;
+        width: 47%;
+        margin-top: 15px;
+    }
+
+    .content .photo-albums a:nth-child(3n) {
+        margin-right: 15px;
+    }
+
+    .content .photo-albums a:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .content .photo-albums a:nth-child(3) {
+        margin-top: 15px;
+    }
+
+    /************* Photo albums end ******/
 }
 
 /*@media screen and (max-width: 374px) {*/
