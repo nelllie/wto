@@ -1878,9 +1878,15 @@ p {
     /************* Search results end ******/
 }
 
-/*@media screen and (max-width: 374px) {*/
-    /*.articles .latest > div p {*/
-        /*font-size: 14px;*/
-        /*line-height: 18px;*/
-    /*}*/
-/*}*/
+@media screen and (max-width: 374px) {
+    .articles .latest > div p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    /*********** search results *********/
+    .content .search-results div img {
+        margin-right: 17px;
+    }
+    /*********** search results end *********/
+}
