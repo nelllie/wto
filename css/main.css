@@ -1040,6 +1040,50 @@ p {
 
 /********** Video-gallery end ***********/
 
+/************ search results********/
+.search-results {
+    width: 100%;
+}
+.content .search-results div {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.content .search-results img {
+    width: 172px;
+    margin-right: 28px;
+    float: left;
+    border-radius: 6px;
+}
+
+.content .search-results span:first-of-type {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+    color: #294c9b;
+    margin-top: 11px;
+}
+
+.content .search-results p {
+    font-size: 14px;
+    text-align: left;
+    color: #464646;
+    margin-top: 5px;
+    line-height: 19px;
+}
+
+.content .search-results span:last-of-type {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    color: #464646;
+    margin-top: 8px;
+}
+
+/********** site map end   **********/
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
         font-size: 20px;
@@ -1348,6 +1392,30 @@ p {
 
 
     /************ News Page END ***********/
+
+    /************ Search results **********/
+
+    .content .search-results div {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content .search-results span:first-of-type {
+        width: 68%;
+        margin-top: 12px;
+    }
+
+    .content .search-results p {
+        display: none;
+    }
+
+    .content .search-results span:last-of-type {
+        margin-top: 3px;
+    }
+    /************* Search results end ******/
+
 
 
 
@@ -1775,6 +1843,39 @@ p {
     }
     
     /************ VIDEO- GALLERY 768 END ************/
+
+    /************* Search results ******/
+
+    .content .search-results {
+        margin-bottom: 43px;
+    }
+
+    .content .search-results div {
+        margin-bottom: 15px;
+    }
+
+    .content .search-results div img {
+        width: 38.5%;
+    }
+
+    .content .search-results span:first-of-type {
+        width: 55%;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 3px;
+    }
+
+    .content .search-results p {
+        display: none;
+    }
+
+    .content .search-results span:last-of-type {
+        float: right;
+        text-align: left;
+        display: block;
+        width: 55%;
+    }
+    /************* Search results end ******/
 }
 
 /*@media screen and (max-width: 374px) {*/
