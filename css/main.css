@@ -1043,19 +1043,74 @@ p {
 
 
 /************* FAG normal start **********/
-    .content .faq div{
-        background: #E4ECFE;
-        border-radius: 6px;
-    }
+.content .faq div{
+    background: #E4ECFE;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 18px 24px;
+}
 
-    .content .faq span{
-        /* 1. Lorem Ipsum is si: */
-        font-family: HelveticaNeue-Light;
-        font-size: 18px;
-        color: #294C9B;
-        letter-spacing: 0;
-        line-height: 26px;
-    }
+.content .faq .question{
+    font-weight: 100;
+    font-size: 18px;
+    color: #294C9B;
+    letter-spacing: 0;
+    line-height: 26px;
+    position: relative;
+    padding-right: 50px;
+}
+
+.content .faq .inactive .answer {
+    display: none;
+}
+
+.content .faq .active {
+    background: #254498;
+    color: #FFFFFF;
+}
+
+.content .faq .active .answer{
+    display: block;
+    color: #FFFFFF;
+    padding: 20px 90px 10px 40px;
+}
+
+.content .faq .inactive .answer {
+    display: none;
+}
+
+
+
+.content .faq .active .question{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+.content .faq .arrow{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content .faq .inactive .question svg path {
+    fill: #3E60A8;
+}
+
+.content .faq .active .question svg path{
+    fill: #FFFFFF;
+
+}
+
+.content .faq .active .question .arrow{
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+}
 
 /************* FAG normAl end **********/
 
@@ -1368,7 +1423,25 @@ p {
 
     /************ News Page END ***********/
 
+    /*********** FAG PAGE Ipad START *********/
+    .content .faq{
+        margin-bottom: 40px;
+    }
 
+    .content .faq .active .answer{
+        padding: 20px 70px 10px 40px;
+    }
+
+    .content .faq .question{
+        margin-right: 160px;
+        margin-left: 40px;
+    }
+
+    .content .faq .arrow {
+        right: -150px;
+    }
+
+    /*********** FAQ PAGE Ipad END **********/
 
 }
 
@@ -1794,6 +1867,15 @@ p {
     }
     
     /************ VIDEO- GALLERY 768 END ************/
+
+    /************ FAG MOB 768 START *************/
+
+    .content .faq .active .answer {
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    /************* FAG MOB 768  END ************/
+
 }
 
 /*@media screen and (max-width: 374px) {*/
