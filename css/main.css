@@ -1067,9 +1067,6 @@ p {
 }
 
 
-.content .faq .inactive .answer {
-    display: none;
-}
 
 .content .faq  li .outside{
     position: absolute;
@@ -1090,7 +1087,7 @@ p {
     padding: 20px 60px 10px 20px;
 }
 
-.content .faq .inactive .answer {
+.content .faq .answer {
     display: none;
 }
 
