@@ -104,4 +104,11 @@ $(function () {
             .find('[data-tab="'+tab+'"]').show();
     });
 
+    //FAG li
+
+    $('.faq-li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+
 });
