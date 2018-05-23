@@ -1043,21 +1043,29 @@ p {
 
 
 /************* FAG normal start **********/
-.content .faq div{
+
+
+.content .faq li{
     background: #E4ECFE;
     border-radius: 6px;
     margin-bottom: 15px;
     padding: 18px 24px;
+    list-style: decimal;
+    list-style-position: inside;
+    color: #294C9B;
+    position: relative;
+
 }
 
 .content .faq .question{
+    display: inline;
     font-weight: 100;
     font-size: 18px;
     color: #294C9B;
     letter-spacing: 0;
     line-height: 26px;
-    position: relative;
     padding-right: 50px;
+
 }
 
 .content .faq .inactive .answer {
@@ -1072,7 +1080,7 @@ p {
 .content .faq .active .answer{
     display: block;
     color: #FFFFFF;
-    padding: 20px 90px 10px 40px;
+    padding: 20px 60px 10px 20px;
 }
 
 .content .faq .inactive .answer {
@@ -1090,8 +1098,8 @@ p {
 .content .faq .arrow{
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 17px;
+    right: 25px;
 }
 
 .content .faq .inactive .question svg path {
@@ -1433,13 +1441,10 @@ p {
     }
 
     .content .faq .question{
-        margin-right: 160px;
-        margin-left: 40px;
+        margin-right: 100px;
     }
 
-    .content .faq .arrow {
-        right: -150px;
-    }
+
 
     /*********** FAQ PAGE Ipad END **********/
 
@@ -1878,9 +1883,9 @@ p {
 
 }
 
-/*@media screen and (max-width: 374px) {*/
-    /*.articles .latest > div p {*/
-        /*font-size: 14px;*/
-        /*line-height: 18px;*/
-    /*}*/
-/*}*/
+@media screen and (max-width: 374px) {
+    .articles .latest > div p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
