@@ -1050,28 +1050,35 @@ p {
     border-radius: 6px;
     margin-bottom: 15px;
     padding: 18px 24px;
-    list-style: decimal;
-    list-style-position: inside;
     color: #294C9B;
     position: relative;
 
 }
 
 .content .faq .question{
-    display: inline;
     font-weight: 100;
     font-size: 18px;
     color: #294C9B;
     letter-spacing: 0;
     line-height: 26px;
     padding-right: 50px;
+    padding-left: 20px;
 
 }
+
 
 .content .faq .inactive .answer {
     display: none;
 }
 
+.content .faq  li .outside{
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    display: inline-block;
+    font-size: 18px;
+
+}
 .content .faq .active {
     background: #254498;
     color: #FFFFFF;
