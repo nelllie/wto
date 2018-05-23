@@ -107,7 +107,12 @@ $(function () {
     //FAG li
 
     $('.faq-li').click(function(){
+        //$(this).siblings().removeClass('active');
+        //$(this).addClass('active');
+
+        $('.answer').slideUp();
         $(this).siblings().removeClass('active');
+        $(this).find('.answer').slideDown();
         $(this).addClass('active');
     });
 
