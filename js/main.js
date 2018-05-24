@@ -111,9 +111,10 @@ $(function () {
         //$(this).addClass('active');
 
         $('.answer').slideUp();
+        $(this).addClass('active');
         $(this).siblings().removeClass('active');
         $(this).find('.answer').slideDown();
-        $(this).addClass('active');
+
     });
 
 });

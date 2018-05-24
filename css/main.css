@@ -60,7 +60,7 @@ body{
     padding: 0;
     list-style: none;
     text-decoration: none;
-    transition: 	all 0.1s linear 0.9s;
+
 }
 
 .clearfix::after{
@@ -1054,6 +1054,7 @@ p {
     color: #294C9B;
     position: relative;
     cursor: pointer;
+    transition: 	all 0.1s linear 0.1s;
 
 }
 
@@ -1083,15 +1084,14 @@ p {
     color: #FFFFFF;
 }
 
-.content .faq .active .answer{
+.content .faq .answer{
 
     color: #FFFFFF;
     padding: 20px 60px 10px 20px;
-}
-
-.content .faq .answer {
     display: none;
 }
+
+
 
 
 
@@ -1442,7 +1442,10 @@ p {
         margin-bottom: 40px;
     }
 
-    .content .faq .active .answer{
+
+
+
+    .content .faq .answer{
         padding: 20px 70px 10px 20px;
     }
 
@@ -1881,7 +1884,7 @@ p {
 
     /************ FAG MOB 768 START *************/
 
-    .content .faq .active .answer {
+    .content .faq .answer {
         padding-right: 20px;
         padding-left: 0;
     }
