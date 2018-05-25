@@ -41,7 +41,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: 2000;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.1);
     position: absolute;
 }
 
@@ -1084,6 +1084,128 @@ p {
 
 /********** site map end   **********/
 
+/************* Photo albums ******/
+
+.content .photo-albums {
+    margin-bottom: 50px;
+}
+
+.content .photo-albums a {
+    margin-right:  24px;
+    margin-top: 24px;
+    width: 314px;
+    display: block;
+    float: left;
+}
+
+.content .photo-albums a img {
+    border-radius: 6px;
+}
+
+.content .photo-albums a:nth-child(-n+3) {
+    margin-top: 0;
+}
+
+.content .photo-albums a:nth-child(3n){
+    margin-right: 0;
+}
+
+.content .photo-albums a img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+
+/************* Photo albums end ******/
+
+
+
+/************* FAG normal start **********/
+
+
+.content .faq li{
+    background: #E4ECFE;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 18px 24px;
+    color: #294C9B;
+    position: relative;
+    cursor: pointer;
+    transition: 	all 0.1s linear 0.1s;
+
+}
+
+.content .faq .question{
+    font-weight: 100;
+    font-size: 18px;
+    color: #294C9B;
+    letter-spacing: 0;
+    line-height: 26px;
+    padding-right: 50px;
+    padding-left: 20px;
+
+}
+
+
+
+.content .faq  li .outside{
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    display: inline-block;
+    font-size: 18px;
+
+}
+.content .faq .active {
+    background: #254498;
+    color: #FFFFFF;
+}
+
+.content .faq .answer{
+
+    color: #FFFFFF;
+    padding: 20px 60px 10px 20px;
+    display: none;
+}
+
+
+
+
+
+.content .faq .active .question{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+.content .faq .arrow{
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 25px;
+}
+
+.content .faq .inactive .question svg path {
+    fill: #3E60A8;
+}
+
+.content .faq .active .question svg path{
+    fill: #FFFFFF;
+
+}
+
+.content .faq .active .question .arrow{
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+}
+
+/************* FAG normAl end **********/
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
         font-size: 20px;
@@ -1417,7 +1539,46 @@ p {
     /************* Search results end ******/
 
 
+    /************* Photo albums ******/
 
+    .content .photo-albums a {
+        width: 48%;
+    }
+
+    .content .photo-albums a:nth-child(3n) {
+        margin-right: 24px;
+    }
+
+    .content .photo-albums a:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .content .photo-albums a:nth-child(3) {
+        margin-top: 24px;
+    }
+
+    /************* Photo albums end ******/
+
+
+    /*********** FAG PAGE Ipad START *********/
+    .content .faq{
+        margin-bottom: 40px;
+    }
+
+
+
+
+    .content .faq .answer{
+        padding: 20px 70px 10px 20px;
+    }
+
+    .content .faq .question{
+        margin-right: 100px;
+    }
+
+
+
+    /*********** FAQ PAGE Ipad END **********/
 
 }
 
@@ -1849,6 +2010,38 @@ p {
     .content .search-results {
         margin-bottom: 43px;
     }
+
+    /************* Photo albums ******/
+
+    .content .photo-albums a {
+        margin-right: 15px;
+        width: 47%;
+        margin-top: 15px;
+    }
+
+    .content .photo-albums a:nth-child(3n) {
+        margin-right: 15px;
+    }
+
+    .content .photo-albums a:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .content .photo-albums a:nth-child(3) {
+        margin-top: 15px;
+    }
+
+    /************* Photo albums end ******/
+
+    /************ FAG MOB 768 START *************/
+
+    .content .faq .answer {
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    /************* FAG MOB 768  END ************/
+
+}
 
     .content .search-results div {
         margin-bottom: 15px;
