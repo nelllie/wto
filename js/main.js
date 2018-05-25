@@ -104,4 +104,17 @@ $(function () {
             .find('[data-tab="'+tab+'"]').show();
     });
 
+    //FAG li
+
+    $('.faq-li').click(function(){
+        //$(this).siblings().removeClass('active');
+        //$(this).addClass('active');
+
+        $('.answer').slideUp();
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $(this).find('.answer').slideDown();
+
+    });
+
 });
