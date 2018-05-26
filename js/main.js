@@ -104,4 +104,6 @@ $(function () {
             .find('[data-tab="'+tab+'"]').show();
     });
 
+    $('filter-input')
+
 });
