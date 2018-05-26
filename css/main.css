@@ -1039,6 +1039,98 @@ p {
 
 
 /********** Video-gallery end ***********/
+.filter-form{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+.filter-form div{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.filter-form div:last-of-type{
+    text-align: right;
+    vertical-align: bottom;
+    margin-right: 0;
+    width: 165px;
+}
+
+.filter-form label, .filter-form input, .filter-form .filter-select{
+    display: block;
+}
+
+.filter-form label{
+    color:#000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-form .filter-input{
+    height: 44px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #CACACA;
+    padding: 0 14px;
+    color:#000000;
+
+}
+.filter-form input:-moz-placeholder{
+    color: #000000;
+}
+.filter-form input:-ms-input-placeholder{
+    color: #000000;
+}
+.filter-form input::-webkit-input-placeholder{
+    color: #000000;
+}
+
+.filter-form .filter-select{
+    height: 44px;
+    -moz-appearance: none ;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #CACACA;
+    padding: 0 14px;
+}
+#search_by_key{
+    width: 280px;
+}
+
+#search_by_date{
+    width: 160px;
+    background: #FFFFFF url('../img/calendar.svg') 90% 50% no-repeat;
+}
+
+#ordering{
+    width: 160px;
+    background: #FFFFFF url('../img/submit-icon.svg') 90% 50% no-repeat;
+}
+
+#number-at-page{
+    width: 76px;
+    background: #FFFFFF url('../img/submit-icon.svg') 75% 50% no-repeat;
+}
+
+.filter-form .filter-select option{
+    background: #FFFFFF;
+    width: 100%;
+    margin: 0;
+    padding: 0 14px;
+    border: 1px solid #CACACA;
+}
+
+.filter-form .filter-select option:checked{
+    background: #FFFFFF;
+    width: 100%;
+    margin: 0;
+    padding: 0 14px;
+    border: 1px solid #CACACA;
+}
+
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
@@ -1348,6 +1440,17 @@ p {
 
 
     /************ News Page END ***********/
+
+
+    /************ FORM **************/
+
+    .filter-form div:nth-of-type(n+2){
+        margin-top:30px;
+    }
+
+
+
+    /************ FORM END **************/
 
 
 
@@ -1775,6 +1878,28 @@ p {
     }
     
     /************ VIDEO- GALLERY 768 END ************/
+
+
+    /******************   FORM  *******************/
+
+    .filter-form .filter-select, .filter-form .filter-input{
+        border: none;
+
+    }
+    .filter-form div:nth-of-type(-n+2){
+        width: 100%;
+    }
+
+    #search_by_key, #search_by_date{
+        display: block;
+        width: 100%;
+    }
+
+    .filter-form div:nth-of-type(n+2){
+        margin-top:30px;
+    }
+
+    /******************   FORM END *******************/
 }
 
 /*@media screen and (max-width: 374px) {*/
