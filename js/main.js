@@ -104,6 +104,8 @@ $(function () {
             .find('[data-tab="'+tab+'"]').show();
     });
 
-    $('filter-input')
+    $('select').selectric({
+        arrowButtonMarkup: '<b class="select-arrow"></b>'
+    });
 
 });

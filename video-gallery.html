@@ -7,10 +7,9 @@
 
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
-
-    <link type="text/css" rel="stylesheet" href="css/main.css">
-
+    <link type="text/css" rel="stylesheet" href="js/selectric/public/selectric.css" >
     <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
@@ -118,8 +117,39 @@
 </header>
 <div class="grey-bg">
     <div class="wrapper-white content">
+
+        <h1>Video Gallery</h1>
+
+        <div class="filter-form">
+            <div class="filter-field">
+                <label for="search_by_key">Search by keyword</label>
+                <input id="search_by_key" class="filter-input" placeholder="Write keyword">
+            </div>
+            <div class="filter-field">
+                <label for="search_by_date">Search by date</label>
+                <input id="search_by_date" class="filter-input" placeholder="Select date">
+            </div>
+            <div class="filter-field">
+                <label for="ordering">Ordering</label>
+                <select name="order" id="ordering">
+                    <option value="newest">Newest first</option>
+                    <option value="oldest">Oldest first</option>
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="number-at-page">Number at page</label>
+                <select id="number-at-page" name="number-at-page">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+
+                </select>
+            </div>
+            <div class="list-items-count"><span>Videos count:231</span></div>
+        </div>
         <div class="list list-video clearfix">
-            <h1>Video Gallery</h1>
+
             <div class="clearfix"><a href="#"> <div class="video-wrapper"><img src="http://placehold.it/228x160" alt=""></div> <span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a></div>
             <div class="clearfix"><a href="#"> <div class="video-wrapper"><img src="http://placehold.it/228x160" alt=""></div> <span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a></div>
             <div class="clearfix"><a href="#"> <div class="video-wrapper"><img src="http://placehold.it/228x160" alt=""></div> <span>02 May 2018</span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></a></div>
@@ -180,7 +210,7 @@
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="js/slick/slick.min.js"></script>
 <script type="text/javascript" src="js/fancybox/jquery.fancybox.min.js"></script>
-
+<script type="text/javascript" src="js/selectric/public/jquery.selectric.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>

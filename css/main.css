@@ -1043,19 +1043,21 @@ p {
     margin-bottom: 30px;
     font-size: 14px;
     color: #000000;
+    position: relative;
 }
 
 
-.filter-form div{
+.filter-form .filter-field {
     display: inline-block;
     margin-right: 25px;
+    vertical-align: top;
 }
 
-.filter-form div:last-of-type{
-    text-align: right;
-    vertical-align: bottom;
+.filter-form .list-items-count {
     margin-right: 0;
-    width: 165px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
 }
 
 .filter-form label, .filter-form input, .filter-form .filter-select{
@@ -1115,21 +1117,17 @@ p {
     background: #FFFFFF url('../img/submit-icon.svg') 75% 50% no-repeat;
 }
 
-.filter-form .filter-select option{
-    background: #FFFFFF;
-    width: 100%;
-    margin: 0;
-    padding: 0 14px;
-    border: 1px solid #CACACA;
+.select-arrow {
+    display: block;
+    height: 7px;
+    width: 13px;
+    background: url("../img/submit-icon.svg") center no-repeat;
+    position: absolute;
+    right: 16px;
+    top: 18px;
 }
 
-.filter-form .filter-select option:checked{
-    background: #FFFFFF;
-    width: 100%;
-    margin: 0;
-    padding: 0 14px;
-    border: 1px solid #CACACA;
-}
+
 
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
