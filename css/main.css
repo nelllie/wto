@@ -1253,6 +1253,106 @@ p {
 
 /************* FAG normAl end **********/
 
+/************* Feedback ******/
+
+.feedback {
+    width: 688px;
+}
+
+.feedback p {
+    font-size: 18px;
+    text-align: left;
+    color: #464646;
+    margin-bottom: 41px;
+}
+
+.feedback input {
+    width: 320px;
+    height: 48px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: solid 1px #d6d6d6;
+    margin-bottom: 2px;
+}
+
+.feedback label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #2b2b2b;
+    display: block;
+}
+
+
+.form-error {
+    font-size: 14px;
+    text-align: left;
+    color: #f03e2b;
+    display: block;
+    visibility: hidden;
+}
+
+.error-active {
+    visibility: visible;
+}
+
+.left-side {
+    display: inline-block;
+    width: 320px;
+    margin-right: 42px;
+}
+
+.right-side {
+    display: inline-block;
+    width: 320px;
+    vertical-align: top;
+}
+
+.feedback .button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #284999;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 16px 12px;
+    width: 153px;
+    float: right;
+}
+
+textarea {
+    width: 320px;
+    height: 256px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: solid 1px #d6d6d6;
+}
+
+.captcha-container {
+    display: inline-block;
+    width: 320px;
+}
+
+.captcha-error {
+    height: 30px;
+    width: 320px;
+    border: 1px solid #000000;
+}
+
+.recaptcha {
+    width: 320px;
+    height: 76px;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    border: solid 1px #d6d6d6;
+}
+
+
+/************* Feedback end ******/
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
         font-size: 20px;
@@ -1648,6 +1748,30 @@ p {
 
 
     /*********** FAQ PAGE Ipad END **********/
+
+    /************* Feedback ******/
+
+    textarea {
+        width: 280px;
+    }
+
+    .feedback input {
+        width: 280px;
+    }
+
+    .left-side {
+        margin-right: 4px;
+    }
+
+    .feedback .button {
+        margin-right: 80px;
+    }
+
+    .captcha-container {
+        margin-bottom: 35px;
+    }
+
+    /************* Feedback end ******/
 
 }
 
@@ -2144,6 +2268,40 @@ p {
         padding-left: 0;
     }
     /************* FAG MOB 768  END ************/
+
+    /************* Feedback ******/
+    .feedback{
+        width: 100%;
+    }
+    .right-side {
+        display: block;
+    }
+
+    textarea {
+        margin-bottom: 18px;
+    }
+
+    .captcha-container {
+        margin-bottom: 41px;
+    }
+
+    .feedback .left-side, .feedback .right-side, .feedback .feedback-input, .feedback textarea{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .feedback .button{
+        display: block;
+        float:none;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+
+    .captcha-container {
+        margin-top: 20px;
+        margin-bottom: 46px;
+    }
 
 }
 
