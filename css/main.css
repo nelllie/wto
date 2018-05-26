@@ -1442,8 +1442,13 @@ p {
 
     /************ FORM **************/
 
-    .filter-form div:nth-of-type(n+2){
+    .filter-form .filter-field:nth-of-type(n+3){
         margin-top:30px;
+    }
+
+    .filter-form .list-items-count {
+        display: none;
+
     }
 
 
@@ -1895,6 +1900,10 @@ p {
 
     .filter-form div:nth-of-type(n+2){
         margin-top:30px;
+    }
+    .filter-form .list-items-count {
+        display: none;
+
     }
 
     /******************   FORM END *******************/
