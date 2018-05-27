@@ -398,7 +398,6 @@ body{
     float: left;
     color: white;
 
-    background-image: url("../img/main-text-overlay.svg"), url("../img/intro-img.jpg");
     background-repeat: no-repeat, no-repeat;
 
     background-size: cover;
@@ -458,6 +457,7 @@ h2 {
 #top-menu .top-menu-item {
     color: #464646;
     padding: 28px 0;
+    position: relative;
 }
 
 #top-menu a:last-child {
@@ -469,7 +469,6 @@ h2 {
 }
 
 .drop-down-menu {
-    margin-left: -33px;
     width: 583px;
     box-shadow: 0 4px 4px 0 rgba(197, 197, 197, 0.5);
     background-color: #ffffff;
@@ -478,18 +477,29 @@ h2 {
     position: absolute;
     z-index: 1;
     display: none;
+    padding: 28px 32px 10px 32px;
+}
+
+#top-menu > ul > li:nth-child(n+3) .drop-down-menu {
+    right: 0;
 }
 
 .drop-down-menu li {
     display: inline-block;
-    margin: 26px 32px;
+    width: 30%;
+    line-height: 16px;
+    margin-bottom: 12px;
+    vertical-align: top;
 }
 
-.drop-down-menu h4 {
+.drop-down-menu .drop-down-menu-caption {
+    display: block;
     font-size: 13px;
     font-weight: bold;
     text-align: left;
     color: #284999;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .drop-down-menu a {
@@ -498,7 +508,15 @@ h2 {
     color: #464646;
     display: block;
     text-transform: none;
+    margin-bottom: 8px;
 }
+
+.drop-down-menu a:hover{
+    text-decoration: underline;
+}
+
+
+
 
 .areas {
     width: 340px;
@@ -619,6 +637,10 @@ h2 {
     width: 286px;
 }
 
+.latest-video-item a{
+    outline: none;
+}
+
 .videos .latest > div .video-wrapper{
     display: block;
     position: relative;
@@ -675,6 +697,7 @@ h2 {
     width: 262px;
     display: block;
     padding: 0 12px 12px 12px;
+    outline: none;
 }
 .slider-bottom a img {
     vertical-align: top;
@@ -968,13 +991,13 @@ p {
     text-decoration: underline;
 }
 
-.content .pagination{
+.content .pagination {
     text-align: center;
     margin-top: 45px;
     margin-bottom: 40px;
 }
 
-.content .pagination a, .content .pagination span{
+.content .pagination a, .content .pagination .dots {
     background: #f2f2f2;
     color:#464A4B;
     font-size: 14px;
@@ -986,19 +1009,19 @@ p {
     vertical-align: middle;
 }
 
-.content .pagination .active-pgn{
+.content .pagination .active {
     color: #FFFFFF;
     background-image: linear-gradient(-180deg, #3860BE 0%, #294C9C 100%);
     font-weight: bold;
 }
 
-.content .pagination a:nth-child(2){
+.content .pagination .prev {
     color:#f2f2f2;
     background: #f2f2f2 url("../img/nav-left.svg") center no-repeat;
     border-radius: 3px 0 0 3px;
 }
 
-.content .pagination a:nth-last-child(2){
+.content .pagination .next {
     color:#f2f2f2;
     background: #f2f2f2 url("../img/nav-right.svg") center no-repeat;
     border-radius: 0 3px 3px 0;
