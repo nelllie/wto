@@ -1273,6 +1273,7 @@ p {
     background-color: #ffffff;
     border: solid 1px #d6d6d6;
     margin-bottom: 2px;
+    padding: 0 20px;
 }
 
 .feedback label {
@@ -1281,6 +1282,7 @@ p {
     text-align: left;
     color: #2b2b2b;
     display: block;
+    margin-bottom: 12px;
 }
 
 
@@ -1327,6 +1329,7 @@ textarea {
     border-radius: 6px;
     background-color: #ffffff;
     border: solid 1px #d6d6d6;
+    resize: none;
 }
 
 .captcha-container {
@@ -2298,6 +2301,10 @@ textarea {
         margin-bottom: 8px;
     }
 
+    .feedback input {
+        border: none;
+    }
+
     .captcha-container {
         margin-top: 20px;
         margin-bottom: 46px;
@@ -2338,7 +2345,7 @@ textarea {
         font-size: 14px;
         line-height: 18px;
     }
-
+}
 /*@media screen and (max-width: 374px) {*/
     /*.articles .latest > div p {*/
         /*font-size: 14px;*/
