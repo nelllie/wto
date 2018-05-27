@@ -60,7 +60,6 @@ body{
     padding: 0;
     list-style: none;
     text-decoration: none;
-
 }
 
 .clearfix::after{
@@ -1066,6 +1065,132 @@ p {
 
 
 
+/************ Sitemap **********/
+
+.content {
+    vertical-align: top;
+}
+
+.content h4 {
+    padding-bottom: 25px;
+}
+
+.content h4 a {
+    font-size: 24px;
+    color: #002a7c;
+    text-decoration: none;
+}
+.content li {
+    display: inline-block;
+    width: 24%;
+    padding-right: 50px;
+    vertical-align: top;
+}
+
+.content li > a {
+    display: block;
+    color: #323232;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: normal;
+    padding-bottom: 11px;
+    line-height: 22px;
+}
+
+.content li:last-child a {
+    color: #002a7c;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    padding-bottom: 17px;
+}
+
+.content li:last-child {
+    padding-right: 0;
+}
+/************ Sitemap end********/
+
+/************ search results********/
+.search-results {
+    width: 100%;
+}
+.content .search-results div {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.content .search-results img {
+    width: 172px;
+    margin-right: 28px;
+    float: left;
+    border-radius: 6px;
+}
+
+.content .search-results span:first-of-type {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+    color: #294c9b;
+    margin-top: 11px;
+}
+
+.content .search-results p {
+    font-size: 14px;
+    text-align: left;
+    color: #464646;
+    margin-top: 5px;
+    line-height: 19px;
+}
+
+.content .search-results span:last-of-type {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    color: #464646;
+    margin-top: 8px;
+}
+
+/********** site map end   **********/
+
+/************* Photo albums ******/
+
+.content .photo-albums {
+    margin-bottom: 50px;
+}
+
+.content .photo-albums a {
+    margin-right:  24px;
+    margin-top: 24px;
+    width: 314px;
+    display: block;
+    float: left;
+}
+
+.content .photo-albums a img {
+    border-radius: 6px;
+}
+
+.content .photo-albums a:nth-child(-n+3) {
+    margin-top: 0;
+}
+
+.content .photo-albums a:nth-child(3n){
+    margin-right: 0;
+}
+
+.content .photo-albums a img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+
+/************* Photo albums end ******/
+
+
+
 /************* FAG normal start **********/
 
 
@@ -1460,6 +1585,60 @@ p {
 
     /************ News Page END ***********/
 
+    /*********** Sitemap start**********/
+    .content li {
+        width: 32%;
+        padding-right: 0;
+    }
+
+    .content li a {
+        padding-bottom: 23px;
+    }
+    /************ Search results **********/
+
+    .content .search-results div {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content .search-results span:first-of-type {
+        width: 68%;
+        margin-top: 12px;
+    }
+
+    .content .search-results p {
+        display: none;
+    }
+
+    .content .search-results span:last-of-type {
+        margin-top: 3px;
+    }
+    /************* Search results end ******/
+
+
+    /************* Photo albums ******/
+
+    .content .photo-albums a {
+        width: 48%;
+    }
+
+    .content .photo-albums a:nth-child(3n) {
+        margin-right: 24px;
+    }
+
+    .content .photo-albums a:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .content .photo-albums a:nth-child(3) {
+        margin-top: 24px;
+    }
+
+    /************* Photo albums end ******/
+
+
     /*********** FAG PAGE Ipad START *********/
     .content .faq{
         margin-bottom: 40px;
@@ -1468,6 +1647,19 @@ p {
 
 
 
+    .content li:last-child {
+        padding-top: 56px;
+    }
+
+    .content li:last-child a {
+        color: #002a7c;
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: none;
+        padding-bottom: 29px;
+    }
+
+    /********** Sitemap end *************/
     .content .faq .answer{
         padding: 20px 70px 10px 20px;
     }
@@ -1902,8 +2094,71 @@ p {
     .content .list-video .video-wrapper img{
         width: 100%;
     }
-    
+
+    .content h1{
+        margin: 28px 0 27px 0;
+    }
+
+    .content li {
+        width: 100%;
+        display: block;
+        margin-top: 40px;
+    }
+
+    .content li > a {
+        padding-bottom: 25px;
+    }
+
+    .content li > a:last-child {
+        padding-bottom: 0;
+    }
+
+    .content li:first-child {
+        margin-top: 0;
+    }
+
+    .content li:last-child {
+        margin-top: 40px;
+    }
+
+    .content li:last-child a {
+        padding-bottom: 30px;
+    }
+
+    .content h4 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
     /************ VIDEO- GALLERY 768 END ************/
+
+    /************* Search results ******/
+
+    .content .search-results {
+        margin-bottom: 43px;
+    }
+
+    /************* Photo albums ******/
+
+    .content .photo-albums a {
+        margin-right: 15px;
+        width: 47%;
+        margin-top: 15px;
+    }
+
+    .content .photo-albums a:nth-child(3n) {
+        margin-right: 15px;
+    }
+
+    .content .photo-albums a:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .content .photo-albums a:nth-child(3) {
+        margin-top: 15px;
+    }
+
+    /************* Photo albums end ******/
 
     /************ FAG MOB 768 START *************/
 
@@ -1915,9 +2170,43 @@ p {
 
 }
 
+    .content .search-results div {
+        margin-bottom: 15px;
+    }
+
+    .content .search-results div img {
+        width: 38.5%;
+    }
+
+    .content .search-results span:first-of-type {
+        width: 55%;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 3px;
+    }
+
+    .content .search-results p {
+        display: none;
+    }
+
+    .content .search-results span:last-of-type {
+        float: right;
+        text-align: left;
+        display: block;
+        width: 55%;
+    }
+    /************* Search results end ******/
+}
+
 @media screen and (max-width: 374px) {
     .articles .latest > div p {
         font-size: 14px;
         line-height: 18px;
     }
-}
+
+/*@media screen and (max-width: 374px) {*/
+    /*.articles .latest > div p {*/
+        /*font-size: 14px;*/
+        /*line-height: 18px;*/
+    /*}*/
+/*}*/
