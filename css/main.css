@@ -434,6 +434,7 @@ h1 {
     text-align: left;
     color: #000000;
     margin: 28px 0 45px 0;
+    line-height: 40px;
 }
 
 h2 {
@@ -762,6 +763,8 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     bottom: 17px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
@@ -2097,6 +2100,7 @@ p {
     .wrapper-white{
         background: transparent;
         padding: 0 20px;
+        width: 100%;
     }
     .content{
         width: 100%;
@@ -2140,6 +2144,7 @@ p {
 
     .content h1{
         margin: 28px 0 27px 0;
+        line-height: 40px;
     }
 
     .content h4 {
@@ -2227,6 +2232,61 @@ p {
         width: 55%;
     }
     /************* Search results end ******/
+
+    /******************* Page 1 start *******************/
+    .article img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .photo a{
+        width: calc(50% - 8px);
+        margin-right: 16px;
+    }
+
+    .photo a:nth-child(2n){
+        margin-right: 0;
+    }
+
+    .photo a:nth-child(-n+2){
+        margin-top: 0;
+    }
+    .photo img{
+        width: 100%;
+        vertical-align:  top;
+    }
+
+    .videos-314 .latest > div {
+
+        width: 100%;
+        float: none;
+        margin: 0 auto 20px auto;
+
+    }
+
+    .article{
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }
+
+    .article h3 {
+        margin-top: 22px;
+        margin-bottom: 1px;
+    }
+
+
+
+
+    .small-table{
+        position: static;
+        margin: 0;
+    }
+
+    .small-table td{
+        padding: 0 5px 0 0;
+    }
+    /******************* Page 1 end*******************/
 }
 
 @media screen and (max-width: 374px) {
@@ -2243,7 +2303,11 @@ p {
 
     }
 
+
     /******************   FORM END *******************/
+
+
+
 }
 
 /*@media screen and (max-width: 374px) {*/
