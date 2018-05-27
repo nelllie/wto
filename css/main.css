@@ -1160,55 +1160,6 @@ p {
 }
 
 
-
-
-
-
-/************ Sitemap **********/
-
-.content {
-    vertical-align: top;
-}
-
-.content h4 {
-    padding-bottom: 25px;
-}
-
-.content h4 a {
-    font-size: 24px;
-    color: #002a7c;
-    text-decoration: none;
-}
-.content li {
-    display: inline-block;
-    width: 24%;
-    padding-right: 50px;
-    vertical-align: top;
-}
-
-.content li > a {
-    display: block;
-    color: #323232;
-    font-size: 18px;
-    text-decoration: underline;
-    font-weight: normal;
-    padding-bottom: 11px;
-    line-height: 22px;
-}
-
-.content li:last-child a {
-    color: #002a7c;
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-    padding-bottom: 17px;
-}
-
-.content li:last-child {
-    padding-right: 0;
-}
-/************ Sitemap end********/
-
 /************ search results********/
 .search-results {
     width: 100%;
@@ -1684,15 +1635,7 @@ p {
 
     /************ News Page END ***********/
 
-    /*********** Sitemap start**********/
-    .content li {
-        width: 32%;
-        padding-right: 0;
-    }
 
-    .content li a {
-        padding-bottom: 23px;
-    }
     /************ Search results **********/
 
     .content .search-results div {
@@ -1743,22 +1686,6 @@ p {
         margin-bottom: 40px;
     }
 
-
-
-
-    .content li:last-child {
-        padding-top: 56px;
-    }
-
-    .content li:last-child a {
-        color: #002a7c;
-        font-weight: bold;
-        font-size: 24px;
-        text-decoration: none;
-        padding-bottom: 29px;
-    }
-
-    /********** Sitemap end *************/
     .content .faq .answer{
         padding: 20px 70px 10px 20px;
     }
