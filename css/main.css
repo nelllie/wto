@@ -164,7 +164,7 @@ body{
 }
 
 .fag a{
-    font-size: 15px;
+    font-size: 14px;
     margin-right: 20px;
 }
 
@@ -530,6 +530,7 @@ h2 {
     background: #E2EBFF;
     float: right;
     margin-left: 40px;
+    text-transform: uppercase;
 }
 
 .slider-wrapper{
