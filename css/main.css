@@ -110,14 +110,14 @@ body{
     display: inline-block;
 }
 
-.breadcramps {
+.breadcrumbs {
     display: inline-block;
     border-radius: 6px;
     background-color: #254498;
     text-align: left;
 }
 
-.breadcramps a {
+.breadcrumbs a {
     font-size: 14px;
     color: #FFFFFF;
     text-decoration: underline;
@@ -126,15 +126,23 @@ body{
     position: relative;
 }
 
-.breadcramps a::after {
-    content: '>';
+.breadcrumbs span {
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 6px 16px 8px;
+    display: inline-block;
+    position: relative;
+}
+
+.breadcrumbs a::after {
+    content: url(../img/strelka.svg);
     display: block;
     position: absolute;
     top: 6px;
     left: 100%;
 }
 
-.breadcramps a:last-child::after {
+.breadcrumbs a:last-child::after {
     content: '';
 }
 
