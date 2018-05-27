@@ -1040,53 +1040,6 @@ p {
 
 /********** Video-gallery end ***********/
 
-
-
-/************ Sitemap **********/
-
-.content {
-    vertical-align: top;
-}
-
-.content h4 {
-    padding-bottom: 25px;
-}
-
-.content h4 a {
-    font-size: 24px;
-    color: #002a7c;
-    text-decoration: none;
-}
-.content li {
-    display: inline-block;
-    width: 24%;
-    padding-right: 50px;
-    vertical-align: top;
-}
-
-.content li > a {
-    display: block;
-    color: #323232;
-    font-size: 18px;
-    text-decoration: underline;
-    font-weight: normal;
-    padding-bottom: 11px;
-    line-height: 22px;
-}
-
-.content li:last-child a {
-    color: #002a7c;
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-    padding-bottom: 17px;
-}
-
-.content li:last-child {
-    padding-right: 0;
-}
-/************ Sitemap end********/
-
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
         font-size: 20px;
@@ -1396,29 +1349,7 @@ p {
 
     /************ News Page END ***********/
 
-    /*********** Sitemap start**********/
-    .content li {
-        width: 32%;
-        padding-right: 0;
-    }
 
-    .content li a {
-        padding-bottom: 23px;
-    }
-
-    .content li:last-child {
-        padding-top: 56px;
-    }
-
-    .content li:last-child a {
-        color: #002a7c;
-        font-weight: bold;
-        font-size: 24px;
-        text-decoration: none;
-        padding-bottom: 29px;
-    }
-
-    /********** Sitemap end *************/
 
 }
 
@@ -1841,41 +1772,6 @@ p {
     }
     .content .list-video .video-wrapper img{
         width: 100%;
-    }
-
-    .content h1{
-        margin: 28px 0 27px 0;
-    }
-
-    .content li {
-        width: 100%;
-        display: block;
-        margin-top: 40px;
-    }
-
-    .content li > a {
-        padding-bottom: 25px;
-    }
-
-    .content li > a:last-child {
-        padding-bottom: 0;
-    }
-
-    .content li:first-child {
-        margin-top: 0;
-    }
-
-    .content li:last-child {
-        margin-top: 40px;
-    }
-
-    .content li:last-child a {
-        padding-bottom: 30px;
-    }
-
-    .content h4 {
-        width: 100%;
-        padding-bottom: 20px;
     }
     
     /************ VIDEO- GALLERY 768 END ************/
