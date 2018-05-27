@@ -2141,32 +2141,6 @@ p {
         margin: 28px 0 27px 0;
     }
 
-    .content li {
-        width: 100%;
-        display: block;
-        margin-top: 40px;
-    }
-
-    .content li > a {
-        padding-bottom: 25px;
-    }
-
-    .content li > a:last-child {
-        padding-bottom: 0;
-    }
-
-    .content li:first-child {
-        margin-top: 0;
-    }
-
-    .content li:last-child {
-        margin-top: 40px;
-    }
-
-    .content li:last-child a {
-        padding-bottom: 30px;
-    }
-
     .content h4 {
         width: 100%;
         padding-bottom: 20px;
