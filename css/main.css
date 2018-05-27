@@ -2105,7 +2105,7 @@ p {
         margin: 25px 0 0 0;
     }
 
-    .content .pagination a, .content .pagination span{
+    .content .pagination a, .content .pagination .dots {
         background-color: #FFFFFF;
         width: 48px;
         height: 48px;
@@ -2113,16 +2113,16 @@ p {
         margin: 0 -1px;
     }
 
-    .content .pagination a:nth-child(2) {
+    .content .pagination .prev {
         background: #ffffff url("../img/nav-left.svg") center no-repeat;
         border-radius: 3px 0 0 3px;
     }
 
-    .content .pagination a:nth-last-child(2) {
+    .content .pagination .next {
         background: #FFFFFF url("../img/nav-right.svg") center no-repeat;
     }
 
-    .content .pagination a:first-child,.content .pagination a:last-child,.content .pagination span, .content .hidden{
+    .content .pagination a:first-child,.content .pagination a:last-child,.content .pagination .dots, .content .hidden{
         display: none;
     }
 
