@@ -117,4 +117,8 @@ $(function () {
 
     });
 
+    $('select').selectric({
+        arrowButtonMarkup: '<b class="select-arrow"></b>'
+    });
+
 });

@@ -41,7 +41,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: 2000;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.9);
     position: absolute;
 }
 
@@ -60,7 +60,6 @@ body{
     padding: 0;
     list-style: none;
     text-decoration: none;
-
 }
 
 .clearfix::after{
@@ -1040,6 +1039,96 @@ p {
 
 
 /********** Video-gallery end ***********/
+.filter-form{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #000000;
+    position: relative;
+}
+
+
+.filter-form .filter-field {
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: top;
+}
+
+.filter-form .list-items-count {
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.filter-form label, .filter-form input, .filter-form .filter-select{
+    display: block;
+}
+
+.filter-form label{
+    color:#000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-form .filter-input{
+    height: 44px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #CACACA;
+    padding: 0 14px;
+    color:#000000;
+
+}
+.filter-form input:-moz-placeholder{
+    color: #000000;
+}
+.filter-form input:-ms-input-placeholder{
+    color: #000000;
+}
+.filter-form input::-webkit-input-placeholder{
+    color: #000000;
+}
+
+.filter-form .filter-select{
+    height: 44px;
+    -moz-appearance: none ;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #CACACA;
+    padding: 0 14px;
+}
+#search_by_key{
+    width: 280px;
+}
+
+#search_by_date{
+    width: 160px;
+    background: #FFFFFF url('../img/calendar.svg') 90% 50% no-repeat;
+}
+
+#ordering{
+    width: 160px;
+    background: #FFFFFF url('../img/submit-icon.svg') 90% 50% no-repeat;
+}
+
+#number-at-page{
+    width: 76px;
+    background: #FFFFFF url('../img/submit-icon.svg') 75% 50% no-repeat;
+}
+
+.select-arrow {
+    display: block;
+    height: 7px;
+    width: 13px;
+    background: url("../img/submit-icon.svg") center no-repeat;
+    position: absolute;
+    right: 16px;
+    top: 18px;
+}
+
+
+
 
 
 
@@ -1456,6 +1545,22 @@ p {
 
 
     /*********** FAQ PAGE Ipad END **********/
+    /************ FORM **************/
+
+    .filter-form .filter-field:nth-of-type(n+3){
+        margin-top:30px;
+    }
+
+    .filter-form .list-items-count {
+        display: none;
+
+    }
+
+
+
+    /************ FORM END **************/
+
+
 
 }
 
@@ -1890,11 +1995,37 @@ p {
     }
     /************* FAG MOB 768  END ************/
 
+
+
+    /******************   FORM  *******************/
+
+    .filter-form .filter-select, .filter-form .filter-input{
+        border: none;
+
+    }
+    .filter-form div:nth-of-type(-n+2){
+        width: 100%;
+    }
+
+    #search_by_key, #search_by_date{
+        display: block;
+        width: 100%;
+    }
+
+    .filter-form div:nth-of-type(n+2){
+        margin-top:30px;
+    }
+    .filter-form .list-items-count {
+        display: none;
+
+    }
+
+    /******************   FORM END *******************/
 }
 
-@media screen and (max-width: 374px) {
-    .articles .latest > div p {
-        font-size: 14px;
-        line-height: 18px;
-    }
-}
+/*@media screen and (max-width: 374px) {*/
+    /*.articles .latest > div p {*/
+        /*font-size: 14px;*/
+        /*line-height: 18px;*/
+    /*}*/
+/*}*/
