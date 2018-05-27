@@ -60,6 +60,7 @@ body{
     padding: 0;
     list-style: none;
     text-decoration: none;
+
 }
 
 .clearfix::after{
@@ -1071,53 +1072,94 @@ p {
 
 
 /********** Video-gallery end ***********/
-
-
-
-/************ Sitemap **********/
-
-.content {
-    vertical-align: top;
+.filter-form{
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #000000;
+    position: relative;
 }
 
-.content h4 {
-    padding-bottom: 25px;
-}
 
-.content h4 a {
-    font-size: 24px;
-    color: #002a7c;
-    text-decoration: none;
-}
-.content li {
+.filter-form .filter-field {
     display: inline-block;
-    width: 24%;
-    padding-right: 50px;
+    margin-right: 25px;
     vertical-align: top;
 }
 
-.content li > a {
+.filter-form .list-items-count {
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.filter-form label, .filter-form input, .filter-form .filter-select{
     display: block;
-    color: #323232;
-    font-size: 18px;
-    text-decoration: underline;
-    font-weight: normal;
-    padding-bottom: 11px;
-    line-height: 22px;
 }
 
-.content li:last-child a {
-    color: #002a7c;
+.filter-form label{
+    color:#000000;
     font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-    padding-bottom: 17px;
+    margin-bottom: 10px;
 }
 
-.content li:last-child {
-    padding-right: 0;
+.filter-form .filter-input{
+    height: 44px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #CACACA;
+    padding: 0 14px;
+    color:#000000;
+
 }
-/************ Sitemap end********/
+.filter-form input:-moz-placeholder{
+    color: #000000;
+}
+.filter-form input:-ms-input-placeholder{
+    color: #000000;
+}
+.filter-form input::-webkit-input-placeholder{
+    color: #000000;
+}
+
+.filter-form .filter-select{
+    height: 44px;
+    -moz-appearance: none ;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #CACACA;
+    padding: 0 14px;
+}
+#search_by_key{
+    width: 280px;
+}
+
+#search_by_date{
+    width: 160px;
+    background: #FFFFFF url('../img/calendar.svg') 90% 50% no-repeat;
+}
+
+#ordering{
+    width: 160px;
+    background: #FFFFFF url('../img/submit-icon.svg') 90% 50% no-repeat;
+}
+
+#number-at-page{
+    width: 76px;
+    background: #FFFFFF url('../img/submit-icon.svg') 75% 50% no-repeat;
+}
+
+.select-arrow {
+    display: block;
+    height: 7px;
+    width: 13px;
+    background: url("../img/submit-icon.svg") center no-repeat;
+    position: absolute;
+    right: 16px;
+    top: 18px;
+}
+
 
 /************ search results********/
 .search-results {
@@ -1594,15 +1636,7 @@ p {
 
     /************ News Page END ***********/
 
-    /*********** Sitemap start**********/
-    .content li {
-        width: 32%;
-        padding-right: 0;
-    }
 
-    .content li a {
-        padding-bottom: 23px;
-    }
     /************ Search results **********/
 
     .content .search-results div {
@@ -1653,22 +1687,6 @@ p {
         margin-bottom: 40px;
     }
 
-
-
-
-    .content li:last-child {
-        padding-top: 56px;
-    }
-
-    .content li:last-child a {
-        color: #002a7c;
-        font-weight: bold;
-        font-size: 24px;
-        text-decoration: none;
-        padding-bottom: 29px;
-    }
-
-    /********** Sitemap end *************/
     .content .faq .answer{
         padding: 20px 70px 10px 20px;
     }
@@ -1680,6 +1698,22 @@ p {
 
 
     /*********** FAQ PAGE Ipad END **********/
+    /************ FORM **************/
+
+    .filter-form .filter-field:nth-of-type(n+3){
+        margin-top:30px;
+    }
+
+    .filter-form .list-items-count {
+        display: none;
+
+    }
+
+
+
+    /************ FORM END **************/
+
+
 
 }
 
@@ -2072,7 +2106,7 @@ p {
         margin: 25px 0 0 0;
     }
 
-    .content .pagination a, .content .pagination span{
+    .content .pagination a, .content .pagination .dots {
         background-color: #FFFFFF;
         width: 48px;
         height: 48px;
@@ -2080,16 +2114,16 @@ p {
         margin: 0 -1px;
     }
 
-    .content .pagination a:nth-child(2) {
+    .content .pagination .prev {
         background: #ffffff url("../img/nav-left.svg") center no-repeat;
         border-radius: 3px 0 0 3px;
     }
 
-    .content .pagination a:nth-last-child(2) {
+    .content .pagination .next {
         background: #FFFFFF url("../img/nav-right.svg") center no-repeat;
     }
 
-    .content .pagination a:first-child,.content .pagination a:last-child,.content .pagination span, .content .hidden{
+    .content .pagination a:first-child,.content .pagination a:last-child,.content .pagination .dots, .content .hidden{
         display: none;
     }
 
@@ -2106,32 +2140,6 @@ p {
 
     .content h1{
         margin: 28px 0 27px 0;
-    }
-
-    .content li {
-        width: 100%;
-        display: block;
-        margin-top: 40px;
-    }
-
-    .content li > a {
-        padding-bottom: 25px;
-    }
-
-    .content li > a:last-child {
-        padding-bottom: 0;
-    }
-
-    .content li:first-child {
-        margin-top: 0;
-    }
-
-    .content li:last-child {
-        margin-top: 40px;
-    }
-
-    .content li:last-child a {
-        padding-bottom: 30px;
     }
 
     .content h4 {
@@ -2177,8 +2185,22 @@ p {
     }
     /************* FAG MOB 768  END ************/
 
-}
 
+
+    /******************   FORM  *******************/
+
+    .filter-form .filter-select, .filter-form .filter-input{
+        border: none;
+
+    }
+    .filter-form div:nth-of-type(-n+2){
+        width: 100%;
+    }
+
+    #search_by_key, #search_by_date{
+        display: block;
+        width: 100%;
+    }
     .content .search-results div {
         margin-bottom: 15px;
     }
@@ -2212,6 +2234,24 @@ p {
         font-size: 14px;
         line-height: 18px;
     }
+
+    .filter-form div:nth-of-type(n+2){
+        margin-top:30px;
+    }
+    .filter-form .list-items-count {
+        display: none;
+
+    }
+
+    /******************   FORM END *******************/
+}
+
+/*@media screen and (max-width: 374px) {*/
+    /*.articles .latest > div p {*/
+        /*font-size: 14px;*/
+        /*line-height: 18px;*/
+    /*}*/
+/*}*/
 
 /*@media screen and (max-width: 374px) {*/
     /*.articles .latest > div p {*/
