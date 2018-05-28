@@ -447,6 +447,7 @@ h1 {
     color: #000000;
     margin: 28px 0 45px 0;
     line-height: 40px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -606,6 +607,7 @@ h2 {
     width: 100%;
     border-radius: 6px;
     vertical-align: top;
+    height: 100%;
 }
 
 .latest span, .videos span {
@@ -985,6 +987,10 @@ p:last-child {
     width: 314px;
     float: left;
     margin-right: 24px;
+}
+
+.videos-314 .latest > div .video-wrapper{
+    height: 200px;
 }
 
 .videos-314 .latest > div:nth-child(3n){
@@ -1376,9 +1382,7 @@ p:last-child {
     transform: rotate(180deg);
 
 }
-.videos-314 .latest > div .video-wrapper {
-    height: 240px;
-}
+
 
 /************* FAG normAl end **********/
 
@@ -1443,6 +1447,7 @@ p:last-child {
     color: #000000;
     display: block;
     margin: 45px 0 28px 0;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
