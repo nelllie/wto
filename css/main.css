@@ -1454,6 +1454,7 @@ p:last-child {
 
     .caption{
         margin: 40px 0 30px 0;
+        text-transform: uppercase;
     }
 
     .wrapper{
