@@ -456,7 +456,7 @@ h2 {
     position: relative;
 }
 
-#top-menu ul li {
+#top-menu > ul > li {
     font-size: 15px;
     text-transform: uppercase;
     display: inline-block;
@@ -486,7 +486,7 @@ h2 {
     position: absolute;
     z-index: 1;
     display: none;
-    padding: 28px 32px 10px 32px;
+    padding: 8px 32px 10px 32px;
 }
 
 #top-menu > ul > li:nth-child(n+3) .drop-down-menu {
@@ -495,10 +495,15 @@ h2 {
 
 .drop-down-menu li {
     display: inline-block;
-    width: 30%;
+    width: 32%;
     line-height: 16px;
     margin-bottom: 12px;
+    padding-right: 15px;
     vertical-align: top;
+}
+
+.drop-down-menu li:last-child {
+    padding-right: 0;
 }
 
 .drop-down-menu .drop-down-menu-caption {
@@ -509,6 +514,7 @@ h2 {
     color: #284999;
     text-transform: uppercase;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .drop-down-menu a {
@@ -1329,6 +1335,51 @@ p {
 }
 
 /************* FAG normAl end **********/
+
+/************ Sitemap **********/
+
+.sitemap {
+    vertical-align: top;
+}
+
+.sitemap h4 {
+    padding-bottom: 25px;
+}
+
+.sitemap h4 a {
+    font-size: 24px;
+    color: #002a7c;
+    text-decoration: none;
+}
+.sitemap li {
+    display: inline-block;
+    width: 24%;
+    padding-right: 50px;
+    vertical-align: top;
+}
+
+.sitemap li > a {
+    display: block;
+    color: #323232;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: normal;
+    padding-bottom: 11px;
+    line-height: 22px;
+}
+
+.sitemapt li:last-child a {
+    color: #002a7c;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    padding-bottom: 17px;
+}
+
+.sitemap li:last-child {
+    padding-right: 0;
+}
+/************ Sitemap end********/
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
