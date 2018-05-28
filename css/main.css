@@ -109,6 +109,7 @@ body{
     width: 240px;
     height: 36px;
     padding-left: 15px;
+    padding-right: 45px;
     border: none;
     background: #FFFFFF url("../img/search-icon-grey.svg") 94% center no-repeat;
 }
@@ -638,9 +639,23 @@ h2 {
     font-size: 18px;
     color: #284999;
     position: absolute;
-    top: 7px;
+    top: 0;
     text-decoration: underline;
     right: 0;
+}
+
+
+.articles{
+    margin-top: 40px
+}
+
+.inline-block-caption{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 26px;
+    color: #000000;
+    margin-right: 30px;
+    margin-bottom:25px;
 }
 
 .inactive {
@@ -648,10 +663,6 @@ h2 {
     color: #464646;
     font-weight: normal;
     cursor: pointer;
-}
-
-.slider-wrapper, .articles, .links{
-    margin-top: 40px
 }
 
 .videos{
@@ -666,13 +677,21 @@ h2 {
 
 .latest-video-item a{
     outline: none;
+    display: block;
 }
 
 .videos .latest > div .video-wrapper{
     display: block;
     position: relative;
     width: 100%;
+    height: 145px;
+    border-radius: 6px;
 }
+
+.content .list-video .video-wrapper img{
+    display: none;
+}
+
 
 .videos .latest > div .video-wrapper::before{
     content: '';
@@ -699,7 +718,7 @@ h2 {
     width: 100%;
     background-color: #f4f4f4;
     margin-top: 56px;
-    padding: 45px 0;
+    padding: 1px 0 45px;
 }
 .links h2{
     display: block;
@@ -747,6 +766,7 @@ h2 {
     padding: 29px 10px 29px 45px;
     position: relative;
     color: #1d1d1d;
+    vertical-align: top;
 }
 
 .areas a::before {
@@ -763,7 +783,8 @@ h2 {
 .areas a svg {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 27px;
+    margin-right: 25px;
+    width: 43px;
 }
 
 .areas a:hover {
@@ -775,8 +796,7 @@ h2 {
 }
 
 .areas span {
-    width: 18px;
-    height: 22px;
+    width: 210px;
     font-size: 18px;
     font-weight: bold;
     bottom: 17px;
@@ -976,13 +996,7 @@ p:last-child {
     margin-top: 0;
 }
 
-.caption{
-    font-size: 28px;
-    font-weight: bold;
-    color: #000000;
-    display: block;
-    margin: 45px 0 28px 0;
-}
+
 
 /**************   PAGE 1  END  **************/
 
@@ -1417,6 +1431,15 @@ p:last-child {
 }
 /************ Sitemap end********/
 
+
+.caption, .videos .caption{
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin: 45px 0 28px 0;
+}
+
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     h2 {
         font-size: 20px;
@@ -1472,6 +1495,15 @@ p:last-child {
     .areas{
         width: 280px;
         margin: 0 -30px 0 30px;
+    }
+
+    .areas a{
+        outline: none;
+    }
+
+    .areas  a svg{
+        width: 41px;
+        margin-right: 20px;
     }
 
     .slider-wrapper, .articles, .videos, .links{
@@ -1551,12 +1583,18 @@ p:last-child {
         margin-right: 0;
     }
 
+    .videos .latest > div .video-wrapper{
+        height: 122px;
+    }
+
     .areas h2{
         font-size: 19px;
     }
 
     .areas span{
         font-size: 14px;
+        width: 164px;
+        line-height: 20px;
     }
 
     .areas a{
@@ -1586,6 +1624,12 @@ p:last-child {
 
     .links{
         padding:24px 0 45px;
+    }
+
+    .inline-block-caption{
+        font-size: 20px;
+        margin-right: 30px;
+        margin-bottom:25px;
     }
 
     .footer-center {
@@ -1952,7 +1996,9 @@ p:last-child {
 
 
     .areas span{
-        font-size: 13px;
+        font-size: 12px;
+        width: 100%;
+        line-height: 20px;
     }
 
     .areas a{
@@ -1962,6 +2008,8 @@ p:last-child {
         border-radius: 6px;
         padding: 18px 10px 10px 10px;
         text-align: center;
+        height: 120px;
+
     }
 
 
@@ -1977,6 +2025,7 @@ p:last-child {
         display:block;
         vertical-align: middle;
         margin: 0 auto 5px auto;
+        width: 40px;
     }
 
     .slider .fact_slide {
@@ -2064,6 +2113,11 @@ p:last-child {
         padding: 0 0 45px;
     }
 
+    .inline-block-caption{
+        font-size: 18px;
+        margin: 25px 25px 25px 0;
+    }
+
     .videos{
         padding:1px 0 20px 0;
         background: #F4F4F4;
@@ -2072,6 +2126,10 @@ p:last-child {
 
     .latest-video-item {
         text-align: left;
+    }
+
+    .videos .latest > div .video-wrapper{
+        height: 110px;
     }
 
     .videos p {
@@ -2356,8 +2414,9 @@ p:last-child {
 
     }
 
-    .caption{
-        margin: 40px 0 25px 0;
+    .caption, .videos .caption{
+        margin: 25px auto 25px auto;
+        text-align: center;
     }
 
     .article{
@@ -2404,6 +2463,16 @@ p:last-child {
         display: none;
 
     }
+
+    .areas a {
+        height: 120px;
+        vertical-align: top;
+    }
+
+    .areas span {
+        font-size: 12px;
+    }
+
 
 
     /******************   FORM END *******************/
