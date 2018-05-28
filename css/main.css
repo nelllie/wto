@@ -1376,6 +1376,9 @@ p:last-child {
     transform: rotate(180deg);
 
 }
+.videos-314 .latest > div .video-wrapper {
+    height: 240px;
+}
 
 /************* FAG normAl end **********/
 
