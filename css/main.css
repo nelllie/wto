@@ -1032,6 +1032,7 @@ p:last-child {
     font-size: 32px;
     margin: 28px 0 45px;
     text-transform: uppercase;
+    color: #2b2b2b;
 }
 .content .list div {
     float: left;
