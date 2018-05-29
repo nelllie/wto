@@ -33,7 +33,7 @@ body{
     font-family: HelveticaNeue, sans-serif;
     font-size: 18px;
     font-weight: 300;
-    color: #294C98;
+    color: #464646;
     line-height: 150%;
 }
 
@@ -449,7 +449,7 @@ h1 {
     font-size: 32px;
     font-weight: bold;;
     text-align: left;
-    color: #000000;
+    color: #2b2b2b;
     margin: 28px 0 45px 0;
     line-height: 40px;
     text-transform: uppercase;
@@ -509,6 +509,13 @@ h2 {
 
 #top-menu > ul > li:nth-child(n+3) .drop-down-menu {
     right: 0;
+}
+
+.drop-down-menu h4 {
+    color: #284999;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .drop-down-menu li {
@@ -1532,8 +1539,10 @@ textarea {
     display: block;
 }
 
-.bold {
+.contacts .bold {
     font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 /************ map end ***********/
