@@ -144,4 +144,9 @@ $(function () {
         $(this).closest('li').find(' > ul').slideUp();
         $(this).removeClass('minus').addClass('plus');
     });
+
+    $('.page-overlay .close-button').click(function () {
+        $('.mob-menu-mini').slideUp();
+        $('.page-overlay').slideUp();
+    });
 });
