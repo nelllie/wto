@@ -130,4 +130,18 @@ $(function () {
         $(this).attr('placeholder',$(this).data('placeholder'));
     });
 
+    $('.mob-hidden-menu').click(function () {
+        $('.page-overlay').fadeIn();
+        $('.mob-menu-mini').fadeIn();
+    });
+
+    $('.mob-menu-mini').on('click', '.plus', function () {
+        $(this).closest('li').find(' > ul').slideDown();
+        $(this).removeClass('plus').addClass('minus');
+    });
+
+    $('.mob-menu-mini').on('click', '.minus', function () {
+        $(this).closest('li').find(' > ul').slideUp();
+        $(this).removeClass('minus').addClass('plus');
+    });
 });
