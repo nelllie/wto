@@ -142,7 +142,7 @@ body{
 .breadcrumbs span {
     font-size: 14px;
     color: #FFFFFF;
-    padding: 6px 16px 8px;
+    padding: 8px 16px 6px;
     display: inline-block;
     position: relative;
 }
@@ -151,11 +151,23 @@ body{
     content: url(../img/strelka.svg);
     display: block;
     position: absolute;
-    top: 6px;
+    top: 8px;
     left: 100%;
 }
 
 .breadcrumbs a:last-child::after {
+    content: '';
+}
+
+.breadcrumbs span::after {
+    content: url(../img/strelka.svg);
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 100%;
+}
+
+.breadcrumbs span:last-child::after {
     content: '';
 }
 
@@ -1516,9 +1528,9 @@ textarea {
 }
 
 .contacts {
-    color: #000000;
     font-size: 18px;
 }
+
 
 .contacts div {
     display: inline-block;
