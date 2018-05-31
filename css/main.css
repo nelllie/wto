@@ -1612,6 +1612,29 @@ textarea {
 }
 /************ Sitemap end********/
 
+/************* No page found *************/
+
+.no-page-found {
+    padding-top: 240px;
+    background: url(../img/no-found.png) center top no-repeat;
+    background-size: 50%;
+    text-align: center;
+    height: 360px;
+    margin-top: 45px;
+}
+
+.no-page-found .bold {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.no-page-found span {
+    display: block;
+    font-size: 18px;
+}
+/************* No page found end *************/
+
 
 .caption, .videos .caption{
     font-size: 28px;
@@ -2076,6 +2099,13 @@ textarea {
     }
 
     /************* Feedback end ******/
+
+    /************ no page found **********/
+
+    .no-page-found {
+        padding-top: 170px;
+    }
+    /************ no page found end **********/
 
 }
 
@@ -2752,5 +2782,15 @@ textarea {
         margin-bottom: 20px;
     }
     /************ Contacts end **************/
+
+
+    /*********** no page found **************/
+
+    .no-page-found {
+        background-size: 100%;
+        padding-top: 150
+        px;
+    }
+    /*********** no page found end **************/
 
 }
