@@ -1256,7 +1256,11 @@ p:last-child {
     float: none;
     display: block;
     width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+}
+
+.content .search-item .search-item-text{
+    width: 77%;
 }
 
 .content .search-results img {
@@ -1266,15 +1270,17 @@ p:last-child {
     border-radius: 6px;
 }
 
-.content .search-results span:first-of-type {
+.content .search-results .search-item-text a:first-child span{
     font-weight: normal;
     font-size: 18px;
     text-align: left;
-    color: #294c9b;
     margin-top: 0;
+    display: block;
+    color: #464646;
+    width: 100%;
 }
 
-.content .search-results p {
+.content .search-results .search-item-text p a {
     font-size: 14px;
     text-align: left;
     color: #464646;
@@ -1282,11 +1288,11 @@ p:last-child {
     line-height: 19px;
 }
 
-.content .search-results span:last-of-type {
+.content .search-results .search-item-text span:last-of-type {
     font-size: 14px;
     font-weight: normal;
     text-align: left;
-    color: #464646;
+    color: #000000;
     margin-top: 8px;
 }
 
@@ -1990,12 +1996,16 @@ textarea {
         margin-bottom: 14px;
     }
 
-    .content .search-results span:first-of-type {
-        width: 68%;
-        margin-top: 12px;
+    .content .search-results .search-item-text{
+        width: 64%;
     }
 
-    .content .search-results p {
+    .content .search-results .search-item-text a:first-child span{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .content .search-results .search-item-text p {
         display: none;
     }
 
@@ -2652,24 +2662,28 @@ textarea {
 
     .content .search-results .search-item img {
         width: 38.5%;
+        margin-right: 20px;
     }
 
-    .content .search-results span:first-of-type {
-        width: 55%;
+    .content .search-results .search-item-text {
+        width: 54%;
+    }
+
+    .content .search-results  .search-item-text a:first-child span {
         font-size: 16px;
         line-height: 20px;
-        margin-top: 3px;
     }
 
     .content .search-results p {
         display: none;
     }
 
-    .content .search-results span:last-of-type {
-        float: right;
+    .content .search-results .search-item-text span:last-of-type {
+        float: left;
         text-align: left;
         display: block;
         width: 55%;
+        font-size: 14px;
     }
     /************* Search results end ******/
 
