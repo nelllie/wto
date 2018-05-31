@@ -1271,7 +1271,7 @@ p:last-child {
     font-size: 18px;
     text-align: left;
     color: #294c9b;
-    margin-top: 11px;
+    margin-top: 0;
 }
 
 .content .search-results p {
