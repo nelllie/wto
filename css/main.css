@@ -1605,7 +1605,7 @@ textarea {
     line-height: 22px;
 }
 
-.sitemapt li:last-child a {
+.sitemap li:last-child a {
     color: #002a7c;
     font-weight: bold;
     font-size: 24px;
@@ -2116,6 +2116,19 @@ textarea {
         padding-top: 170px;
     }
     /************ no page found end **********/
+
+
+    /********** Sitemap iPad starts *********/
+    .sitemap li{
+        width: 32%;
+    }
+
+    .sitemap li:nth-of-type(3n){
+        padding-right: 0;
+    }
+
+
+    /********** Sitemap iPad ends *********/
 
 }
 
@@ -2757,6 +2770,29 @@ textarea {
     .map {
         width: 100%;
     }
+
+
+
+    /********** Sitemap mob *******/
+
+    .sitemap li{
+        width: 49%;
+    }
+
+    .sitemap li:nth-child(2n){
+        padding-right: 0;
+    }
+
+    .sitemap li:nth-child(3n){
+        padding-right: 50px;
+    }
+
+
+    .sitemap li:nth-child(n+3){
+        margin-top: 30px;
+    }
+
+    /********** Sitemap mob *******/
 }
 
 @media screen and (max-width: 374px) {
@@ -2805,5 +2841,28 @@ textarea {
         padding-top: 150px;
     }
     /*********** no page found end **************/
+
+
+
+    /********** Sitemap mob *******/
+
+    .sitemap li{
+        width: 100%;
+    }
+
+    .sitemap li:nth-child(2n){
+        padding-right: 0;
+    }
+
+    .sitemap li:nth-child(3n){
+        padding-right: 0;
+    }
+
+
+    .sitemap li:nth-child(n+2){
+        margin-top: 30px;
+    }
+
+    /********** Sitemap mob *******/
 
 }
