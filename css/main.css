@@ -1252,11 +1252,11 @@ p:last-child {
 .search-results {
     width: 100%;
 }
-.content .search-results div {
+.content .search-results .search-item {
     float: none;
     display: block;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .content .search-results img {
@@ -1983,11 +1983,11 @@ textarea {
 
     /************ Search results **********/
 
-    .content .search-results div {
+    .content .search-results .search-item {
         float: none;
         display: block;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
 
     .content .search-results span:first-of-type {
@@ -2646,11 +2646,11 @@ textarea {
         display: block;
         width: 100%;
     }
-    .content .search-results div {
+    .content .search-results .search-item {
         margin-bottom: 15px;
     }
 
-    .content .search-results div img {
+    .content .search-results .search-item img {
         width: 38.5%;
     }
 
@@ -2788,8 +2788,7 @@ textarea {
 
     .no-page-found {
         background-size: 100%;
-        padding-top: 150
-        px;
+        padding-top: 150px;
     }
     /*********** no page found end **************/
 
