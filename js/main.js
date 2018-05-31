@@ -100,7 +100,7 @@ $(function () {
 
         // turn off all tabs
         $(this).closest('.articles').find('[data-tab]').hide().end()
-            // turn on current tabs
+        // turn on current tabs
             .find('[data-tab="'+tab+'"]').show();
     });
 
@@ -121,15 +121,6 @@ $(function () {
         arrowButtonMarkup: '<b class="select-arrow"></b>'
     });
 
-
-    $('input,textarea').focus(function(){
-        $(this).data('placeholder',$(this).attr('placeholder'));
-        $(this).attr('placeholder','');
-    });
-    $('input,textarea').blur(function(){
-        $(this).attr('placeholder',$(this).data('placeholder'));
-    });
-
     $('.mob-hidden-menu').click(function () {
         $('.page-overlay').fadeIn();
         $('.mob-menu-mini').fadeIn();
@@ -146,7 +137,14 @@ $(function () {
     });
 
     $('.page-overlay .close-button').click(function () {
-        $('.mob-menu-mini').slideUp();
-        $('.page-overlay').slideUp();
+        $('.mob-menu-mini').fadeOut();
+        $('.page-overlay').fadeOut();
     });
+
+    new GMaps({
+        div: '#gmap',
+        lat: -12.043333,
+        lng: -77.028333
+    });
+
 });
