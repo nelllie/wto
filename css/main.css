@@ -299,6 +299,7 @@ body{
     color: #FFFFFF;
     width: 100%;
     outline: none;
+    padding-right: 35px;
 }
 .mob-menu-mini li  {
     font-size: 22px;
@@ -348,7 +349,7 @@ body{
     margin-bottom: 23px;
     display: inline-block;
     position: relative;
-
+    padding-right: 30px;
 }
 
 .level1 > li > a::after {
