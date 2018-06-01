@@ -1280,12 +1280,16 @@ p:last-child {
     width: 100%;
 }
 
+.content .search-results .search-item-text p{
+    line-height: 19px;
+}
+
 .content .search-results .search-item-text p a {
     font-size: 14px;
     text-align: left;
     color: #464646;
     margin-top: 5px;
-    line-height: 19px;
+
 }
 
 .content .search-results .search-item-text span:last-of-type {
