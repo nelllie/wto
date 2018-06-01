@@ -493,6 +493,10 @@ h2 {
     margin-right: 30px;
 }
 
+#top-menu > ul >li:last-child{
+    margin-right: 0;
+}
+
 #top-menu .top-menu-item {
     color: #464646;
     padding: 28px 0;
