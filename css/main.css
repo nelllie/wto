@@ -2880,4 +2880,45 @@ textarea {
 
     /********** Sitemap mob *******/
 
+
+
+    /********** MOB MENU MINI STARTS *************/
+
+    .mob-menu-mini{
+        width: 246px;
+    }
+
+    .mob-menu-mini input{
+        font-size: 16px;
+    }
+
+    .mob-menu-mini li{
+        font-size: 16px;
+        padding-right: 40px;
+    }
+
+    .level2 li, .level3 li, .level4 li{
+        padding-right: 0;
+    }
+    .level3 li a{
+        font-size: 16px;
+    }
+
+    .level4 li a{
+        font-size: 16px;
+    }
+
+    .mob-menu-mini h4 a{
+        font-size: 16px;
+    }
+
+    .level1 > li > a::after{
+        width: 194px;
+    }
+
+
+
+
+    /********** MOB MENU MINI ENDS *************/
+
 }
