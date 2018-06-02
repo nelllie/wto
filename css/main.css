@@ -1229,8 +1229,8 @@ p:last-child {
 }
 
 #search_by_date{
-    width: 160px;
-    background: #FFFFFF url('../img/calendar.svg') 90% 50% no-repeat;
+    width: 220px;
+    background: #FFFFFF url('../img/calendar.svg') right 15px top 50% no-repeat;
 }
 
 #ordering{
