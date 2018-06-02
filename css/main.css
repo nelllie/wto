@@ -900,6 +900,37 @@ h2 {
     right: 0;
 }
 
+.subscribe {
+    display: block;
+}
+
+.subscribe-success{
+    padding-right: 93px;
+}
+
+.subscribe-success span{
+    display: block;
+    line-height: 20px;
+}
+
+.subscribe-success .bold{
+    font-size: 14px;
+    margin-bottom: 15px;
+
+}
+
+.subscribe-icon {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 40px;
+    background: url(../img/str1.svg) center no-repeat;
+    right: 0px;
+    top: 40px;
+    cursor: pointer;
+    left: 226px;
+}
+
 .footer-right input{
     width: 100%;
     border-radius: 6px;
@@ -1202,17 +1233,17 @@ p:last-child {
     outline: none;
     border: 1px solid #CACACA;
     padding: 0 14px;
-    color:#000000;
+    color:#888888;
 
 }
 .filter-form input:-moz-placeholder{
-    color: #000000;
+    color: #888888;
 }
 .filter-form input:-ms-input-placeholder{
-    color: #000000;
+    color: #888888;
 }
 .filter-form input::-webkit-input-placeholder{
-    color: #000000;
+    color: #888888;
 }
 
 .filter-form .filter-select{
@@ -1223,6 +1254,7 @@ p:last-child {
     outline: none;
     border: 1px solid #CACACA;
     padding: 0 14px;
+    color: #888888;
 }
 #search_by_key{
     width: 280px;
@@ -1253,7 +1285,9 @@ p:last-child {
     top: 18px;
 }
 
-
+.selectric .label #ordering span{
+    margin: 0 76px 0 15px;
+}
 /************ search results********/
 .search-results {
     width: 100%;
@@ -1662,6 +1696,10 @@ textarea {
 }
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
+    .close-button{
+        right: 300px;
+    }
+
     h2 {
         font-size: 20px;
         margin-bottom: 21px;
@@ -1874,6 +1912,7 @@ textarea {
         display: inline-block;
         float: right;
     }
+
 
     .main-footer{
         padding: 24px 0;
@@ -2925,6 +2964,9 @@ textarea {
         right: 246px;
     }
 
+    .filter-form .filter-field{
+        margin-right: 0;
+    }
 
 
 
