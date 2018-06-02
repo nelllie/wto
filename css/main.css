@@ -2806,7 +2806,12 @@ textarea {
         margin-top: 30px;
     }
 
+
     /********** Sitemap mob *******/
+
+    .close-button{
+        right: 300px;
+    }
 }
 
 @media screen and (max-width: 374px) {
@@ -2915,9 +2920,15 @@ textarea {
         width: 194px;
     }
 
+    .close-button{
+        right: 246px;
+    }
+
 
 
 
     /********** MOB MENU MINI ENDS *************/
+
+
 
 }
