@@ -59,8 +59,12 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
+}
+
+
+ul, ol{
+    padding-left: 40px;
 }
 
 .clearfix::after{
@@ -1371,7 +1375,12 @@ p:last-child {
 
 
 
+
 /************* FAG normal start **********/
+
+.content .faq{
+    list-style: none;
+}
 
 
 .content .faq li{
@@ -2930,6 +2939,10 @@ textarea {
 
     .mob-menu-mini{
         width: 246px;
+    }
+
+    .mob-menu-mini ul{
+        padding-left: 0;
     }
 
     .mob-menu-mini input{
